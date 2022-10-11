@@ -9,21 +9,19 @@
 #define ShapeFactory_hpp
 
 ///项目代码
-#include "Shape/Shape.hpp"
+#include "AbstractFactory.hpp"
+#include "../Shape/Shape.hpp"
 
-namespace factory_pattern {
-class ShapeFactory final {
+namespace abstract_factory_pattern {
+class ShapeFactory final : public AbstractFactory {
 public:
-    static ShapeFactory* getInstance();
-    static void destoryInstance();
+    static ShapeFactory* create();
+    void release();
     Shape* getShape(kShapeType type);
     
 private:
     ShapeFactory() = default;
     ~ShapeFactory() = default;
-    
-private:
-    static ShapeFactory* _instance;
 };
 ///命名空间结束
 }

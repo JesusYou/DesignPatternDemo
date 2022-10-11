@@ -11,7 +11,7 @@
 ///项目代码
 #include "Shape.hpp"
 
-namespace factory_pattern {
+namespace abstract_factory_pattern {
 class Circle : public Shape {
 public:
     static Circle* create();
