@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2306764128F5219F00668CF9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306764028F5219F00668CF9 /* main.cpp */; };
+		2306764B28F5398500668CF9 /* ShapeFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306764928F5398500668CF9 /* ShapeFactory.cpp */; };
+		2306765028F539AE00668CF9 /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306764E28F539AE00668CF9 /* Shape.cpp */; };
+		2306765428F539B900668CF9 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306765228F539B900668CF9 /* Circle.cpp */; };
+		2306765828F539CA00668CF9 /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306765628F539CA00668CF9 /* Square.cpp */; };
+		2306765C28F539DE00668CF9 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306765A28F539DE00668CF9 /* Rectangle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,16 @@
 /* Begin PBXFileReference section */
 		2306763D28F5219F00668CF9 /* DesignPatternDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignPatternDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		2306764028F5219F00668CF9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2306764928F5398500668CF9 /* ShapeFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeFactory.cpp; sourceTree = "<group>"; };
+		2306764A28F5398500668CF9 /* ShapeFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShapeFactory.hpp; sourceTree = "<group>"; };
+		2306764E28F539AE00668CF9 /* Shape.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shape.cpp; sourceTree = "<group>"; };
+		2306764F28F539AE00668CF9 /* Shape.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shape.hpp; sourceTree = "<group>"; };
+		2306765228F539B900668CF9 /* Circle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
+		2306765328F539B900668CF9 /* Circle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Circle.hpp; sourceTree = "<group>"; };
+		2306765628F539CA00668CF9 /* Square.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Square.cpp; sourceTree = "<group>"; };
+		2306765728F539CA00668CF9 /* Square.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Square.hpp; sourceTree = "<group>"; };
+		2306765A28F539DE00668CF9 /* Rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		2306765B28F539DE00668CF9 /* Rectangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rectangle.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +72,35 @@
 		2306763F28F5219F00668CF9 /* DesignPatternDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2306764828F5392000668CF9 /* FactoryPattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
+			sourceTree = "<group>";
+		};
+		2306764828F5392000668CF9 /* FactoryPattern */ = {
+			isa = PBXGroup;
+			children = (
+				2306764928F5398500668CF9 /* ShapeFactory.cpp */,
+				2306764A28F5398500668CF9 /* ShapeFactory.hpp */,
+				2306765E28F539E300668CF9 /* Shape */,
+			);
+			path = FactoryPattern;
+			sourceTree = "<group>";
+		};
+		2306765E28F539E300668CF9 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				2306764E28F539AE00668CF9 /* Shape.cpp */,
+				2306764F28F539AE00668CF9 /* Shape.hpp */,
+				2306765228F539B900668CF9 /* Circle.cpp */,
+				2306765328F539B900668CF9 /* Circle.hpp */,
+				2306765628F539CA00668CF9 /* Square.cpp */,
+				2306765728F539CA00668CF9 /* Square.hpp */,
+				2306765A28F539DE00668CF9 /* Rectangle.cpp */,
+				2306765B28F539DE00668CF9 /* Rectangle.hpp */,
+			);
+			path = Shape;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2306765828F539CA00668CF9 /* Square.cpp in Sources */,
+				2306764B28F5398500668CF9 /* ShapeFactory.cpp in Sources */,
+				2306765428F539B900668CF9 /* Circle.cpp in Sources */,
 				2306764128F5219F00668CF9 /* main.cpp in Sources */,
+				2306765028F539AE00668CF9 /* Shape.cpp in Sources */,
+				2306765C28F539DE00668CF9 /* Rectangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
