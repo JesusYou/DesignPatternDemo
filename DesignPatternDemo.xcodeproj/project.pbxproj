@@ -25,6 +25,15 @@
 		2306769028F54A1400668CF9 /* Green.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306768E28F54A1400668CF9 /* Green.cpp */; };
 		2306769428F54A1E00668CF9 /* Blue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306769228F54A1E00668CF9 /* Blue.cpp */; };
 		2306769A28F56F9100668CF9 /* Singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306769828F56F9100668CF9 /* Singleton.cpp */; };
+		2306769F28F578A200668CF9 /* MealBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306769D28F578A200668CF9 /* MealBuilder.cpp */; };
+		230676A328F578B400668CF9 /* Meal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676A128F578B300668CF9 /* Meal.cpp */; };
+		230676B028F5794700668CF9 /* Rice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676AE28F5794700668CF9 /* Rice.cpp */; };
+		230676B528F5795100668CF9 /* Noodle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676B328F5795100668CF9 /* Noodle.cpp */; };
+		230676B928F5795E00668CF9 /* Beer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676B728F5795E00668CF9 /* Beer.cpp */; };
+		230676BD28F5796A00668CF9 /* Mike.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676BB28F5796A00668CF9 /* Mike.cpp */; };
+		230676C528F57E5800668CF9 /* Bowl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676C328F57E5800668CF9 /* Bowl.cpp */; };
+		230676C928F5803F00668CF9 /* Bottle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676C728F5803F00668CF9 /* Bottle.cpp */; };
+		230676CE28F58B1E00668CF9 /* Product.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676CD28F58B1E00668CF9 /* Product.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +86,25 @@
 		2306769328F54A1E00668CF9 /* Blue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Blue.hpp; sourceTree = "<group>"; };
 		2306769828F56F9100668CF9 /* Singleton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Singleton.cpp; sourceTree = "<group>"; };
 		2306769928F56F9100668CF9 /* Singleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Singleton.hpp; sourceTree = "<group>"; };
+		2306769D28F578A200668CF9 /* MealBuilder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MealBuilder.cpp; sourceTree = "<group>"; };
+		2306769E28F578A200668CF9 /* MealBuilder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MealBuilder.hpp; sourceTree = "<group>"; };
+		230676A128F578B300668CF9 /* Meal.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Meal.cpp; sourceTree = "<group>"; };
+		230676A228F578B400668CF9 /* Meal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Meal.hpp; sourceTree = "<group>"; };
+		230676A828F5791900668CF9 /* Product.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Product.hpp; sourceTree = "<group>"; };
+		230676AE28F5794700668CF9 /* Rice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rice.cpp; sourceTree = "<group>"; };
+		230676AF28F5794700668CF9 /* Rice.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rice.hpp; sourceTree = "<group>"; };
+		230676B328F5795100668CF9 /* Noodle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Noodle.cpp; sourceTree = "<group>"; };
+		230676B428F5795100668CF9 /* Noodle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Noodle.hpp; sourceTree = "<group>"; };
+		230676B728F5795E00668CF9 /* Beer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Beer.cpp; sourceTree = "<group>"; };
+		230676B828F5795E00668CF9 /* Beer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Beer.hpp; sourceTree = "<group>"; };
+		230676BB28F5796A00668CF9 /* Mike.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mike.cpp; sourceTree = "<group>"; };
+		230676BC28F5796A00668CF9 /* Mike.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mike.hpp; sourceTree = "<group>"; };
+		230676C028F5797600668CF9 /* Packing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Packing.hpp; sourceTree = "<group>"; };
+		230676C328F57E5800668CF9 /* Bowl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bowl.cpp; sourceTree = "<group>"; };
+		230676C428F57E5800668CF9 /* Bowl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bowl.hpp; sourceTree = "<group>"; };
+		230676C728F5803F00668CF9 /* Bottle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bottle.cpp; sourceTree = "<group>"; };
+		230676C828F5803F00668CF9 /* Bottle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bottle.hpp; sourceTree = "<group>"; };
+		230676CD28F58B1E00668CF9 /* Product.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Product.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +140,7 @@
 				2306764828F5392000668CF9 /* FactoryPattern */,
 				2306766028F547AC00668CF9 /* AbstractFactoryPattern */,
 				2306769728F56F6D00668CF9 /* SingletonPattern */,
+				2306769C28F5787400668CF9 /* BuilderPattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -205,6 +234,64 @@
 			path = SingletonPattern;
 			sourceTree = "<group>";
 		};
+		2306769C28F5787400668CF9 /* BuilderPattern */ = {
+			isa = PBXGroup;
+			children = (
+				230676A628F578C500668CF9 /* Packing */,
+				230676A528F578B700668CF9 /* Product */,
+				2306769D28F578A200668CF9 /* MealBuilder.cpp */,
+				2306769E28F578A200668CF9 /* MealBuilder.hpp */,
+				230676A128F578B300668CF9 /* Meal.cpp */,
+				230676A228F578B400668CF9 /* Meal.hpp */,
+			);
+			path = BuilderPattern;
+			sourceTree = "<group>";
+		};
+		230676A528F578B700668CF9 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				230676AD28F5793500668CF9 /* Drink */,
+				230676AC28F5792F00668CF9 /* Food */,
+				230676CD28F58B1E00668CF9 /* Product.cpp */,
+				230676A828F5791900668CF9 /* Product.hpp */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		230676A628F578C500668CF9 /* Packing */ = {
+			isa = PBXGroup;
+			children = (
+				230676C028F5797600668CF9 /* Packing.hpp */,
+				230676C328F57E5800668CF9 /* Bowl.cpp */,
+				230676C428F57E5800668CF9 /* Bowl.hpp */,
+				230676C728F5803F00668CF9 /* Bottle.cpp */,
+				230676C828F5803F00668CF9 /* Bottle.hpp */,
+			);
+			path = Packing;
+			sourceTree = "<group>";
+		};
+		230676AC28F5792F00668CF9 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				230676AE28F5794700668CF9 /* Rice.cpp */,
+				230676AF28F5794700668CF9 /* Rice.hpp */,
+				230676B328F5795100668CF9 /* Noodle.cpp */,
+				230676B428F5795100668CF9 /* Noodle.hpp */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		230676AD28F5793500668CF9 /* Drink */ = {
+			isa = PBXGroup;
+			children = (
+				230676B728F5795E00668CF9 /* Beer.cpp */,
+				230676B828F5795E00668CF9 /* Beer.hpp */,
+				230676BB28F5796A00668CF9 /* Mike.cpp */,
+				230676BC28F5796A00668CF9 /* Mike.hpp */,
+			);
+			path = Drink;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,22 +348,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230676C528F57E5800668CF9 /* Bowl.cpp in Sources */,
+				230676C928F5803F00668CF9 /* Bottle.cpp in Sources */,
 				2306767328F5499C00668CF9 /* ColorFactory.cpp in Sources */,
 				2306769028F54A1400668CF9 /* Green.cpp in Sources */,
 				2306767B28F549BE00668CF9 /* Circle.cpp in Sources */,
+				2306769F28F578A200668CF9 /* MealBuilder.cpp in Sources */,
+				230676A328F578B400668CF9 /* Meal.cpp in Sources */,
 				2306767F28F549CA00668CF9 /* Square.cpp in Sources */,
 				2306768B28F54A0900668CF9 /* Red.cpp in Sources */,
 				2306767728F549AD00668CF9 /* Shape.cpp in Sources */,
 				2306768328F549DB00668CF9 /* Rectangle.cpp in Sources */,
 				2306765828F539CA00668CF9 /* Square.cpp in Sources */,
 				2306769428F54A1E00668CF9 /* Blue.cpp in Sources */,
+				230676CE28F58B1E00668CF9 /* Product.cpp in Sources */,
+				230676B528F5795100668CF9 /* Noodle.cpp in Sources */,
 				2306768728F549ED00668CF9 /* Color.cpp in Sources */,
 				2306764B28F5398500668CF9 /* ShapeFactory.cpp in Sources */,
 				2306765428F539B900668CF9 /* Circle.cpp in Sources */,
+				230676B928F5795E00668CF9 /* Beer.cpp in Sources */,
 				2306764128F5219F00668CF9 /* main.cpp in Sources */,
 				2306766F28F5498300668CF9 /* ShapeFactory.cpp in Sources */,
 				2306766328F547FC00668CF9 /* FactoryManager.cpp in Sources */,
+				230676BD28F5796A00668CF9 /* Mike.cpp in Sources */,
 				2306769A28F56F9100668CF9 /* Singleton.cpp in Sources */,
+				230676B028F5794700668CF9 /* Rice.cpp in Sources */,
 				2306765028F539AE00668CF9 /* Shape.cpp in Sources */,
 				2306765C28F539DE00668CF9 /* Rectangle.cpp in Sources */,
 			);
