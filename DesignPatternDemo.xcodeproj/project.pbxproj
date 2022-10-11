@@ -24,6 +24,7 @@
 		2306768B28F54A0900668CF9 /* Red.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306768928F54A0900668CF9 /* Red.cpp */; };
 		2306769028F54A1400668CF9 /* Green.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306768E28F54A1400668CF9 /* Green.cpp */; };
 		2306769428F54A1E00668CF9 /* Blue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306769228F54A1E00668CF9 /* Blue.cpp */; };
+		2306769A28F56F9100668CF9 /* Singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306769828F56F9100668CF9 /* Singleton.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,6 +75,8 @@
 		2306768F28F54A1400668CF9 /* Green.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Green.hpp; sourceTree = "<group>"; };
 		2306769228F54A1E00668CF9 /* Blue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Blue.cpp; sourceTree = "<group>"; };
 		2306769328F54A1E00668CF9 /* Blue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Blue.hpp; sourceTree = "<group>"; };
+		2306769828F56F9100668CF9 /* Singleton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Singleton.cpp; sourceTree = "<group>"; };
+		2306769928F56F9100668CF9 /* Singleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Singleton.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,7 @@
 			children = (
 				2306764828F5392000668CF9 /* FactoryPattern */,
 				2306766028F547AC00668CF9 /* AbstractFactoryPattern */,
+				2306769728F56F6D00668CF9 /* SingletonPattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -192,6 +196,15 @@
 			path = Color;
 			sourceTree = "<group>";
 		};
+		2306769728F56F6D00668CF9 /* SingletonPattern */ = {
+			isa = PBXGroup;
+			children = (
+				2306769828F56F9100668CF9 /* Singleton.cpp */,
+				2306769928F56F9100668CF9 /* Singleton.hpp */,
+			);
+			path = SingletonPattern;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,6 +276,7 @@
 				2306764128F5219F00668CF9 /* main.cpp in Sources */,
 				2306766F28F5498300668CF9 /* ShapeFactory.cpp in Sources */,
 				2306766328F547FC00668CF9 /* FactoryManager.cpp in Sources */,
+				2306769A28F56F9100668CF9 /* Singleton.cpp in Sources */,
 				2306765028F539AE00668CF9 /* Shape.cpp in Sources */,
 				2306765C28F539DE00668CF9 /* Rectangle.cpp in Sources */,
 			);
