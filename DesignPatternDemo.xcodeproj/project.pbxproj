@@ -34,6 +34,11 @@
 		230676C528F57E5800668CF9 /* Bowl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676C328F57E5800668CF9 /* Bowl.cpp */; };
 		230676C928F5803F00668CF9 /* Bottle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676C728F5803F00668CF9 /* Bottle.cpp */; };
 		230676CE28F58B1E00668CF9 /* Product.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676CD28F58B1E00668CF9 /* Product.cpp */; };
+		230676D428F64F7F00668CF9 /* ShapeCache.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676D228F64F7F00668CF9 /* ShapeCache.cpp */; };
+		230676DA28F64F9300668CF9 /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676D828F64F9300668CF9 /* Shape.cpp */; };
+		230676DE28F64FA000668CF9 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676DC28F64FA000668CF9 /* Circle.cpp */; };
+		230676E228F64FAD00668CF9 /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676E028F64FAD00668CF9 /* Square.cpp */; };
+		230676E628F64FBB00668CF9 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676E428F64FBB00668CF9 /* Rectangle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -105,6 +110,16 @@
 		230676C728F5803F00668CF9 /* Bottle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bottle.cpp; sourceTree = "<group>"; };
 		230676C828F5803F00668CF9 /* Bottle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bottle.hpp; sourceTree = "<group>"; };
 		230676CD28F58B1E00668CF9 /* Product.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Product.cpp; sourceTree = "<group>"; };
+		230676D228F64F7F00668CF9 /* ShapeCache.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeCache.cpp; sourceTree = "<group>"; };
+		230676D328F64F7F00668CF9 /* ShapeCache.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShapeCache.hpp; sourceTree = "<group>"; };
+		230676D828F64F9300668CF9 /* Shape.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shape.cpp; sourceTree = "<group>"; };
+		230676D928F64F9300668CF9 /* Shape.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shape.hpp; sourceTree = "<group>"; };
+		230676DC28F64FA000668CF9 /* Circle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
+		230676DD28F64FA000668CF9 /* Circle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Circle.hpp; sourceTree = "<group>"; };
+		230676E028F64FAD00668CF9 /* Square.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Square.cpp; sourceTree = "<group>"; };
+		230676E128F64FAD00668CF9 /* Square.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Square.hpp; sourceTree = "<group>"; };
+		230676E428F64FBB00668CF9 /* Rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		230676E528F64FBB00668CF9 /* Rectangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rectangle.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +156,7 @@
 				2306766028F547AC00668CF9 /* AbstractFactoryPattern */,
 				2306769728F56F6D00668CF9 /* SingletonPattern */,
 				2306769C28F5787400668CF9 /* BuilderPattern */,
+				230676D128F64F3E00668CF9 /* PrototypePattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -292,6 +308,31 @@
 			path = Drink;
 			sourceTree = "<group>";
 		};
+		230676D128F64F3E00668CF9 /* PrototypePattern */ = {
+			isa = PBXGroup;
+			children = (
+				230676D728F64F8200668CF9 /* Shape */,
+				230676D228F64F7F00668CF9 /* ShapeCache.cpp */,
+				230676D328F64F7F00668CF9 /* ShapeCache.hpp */,
+			);
+			path = PrototypePattern;
+			sourceTree = "<group>";
+		};
+		230676D728F64F8200668CF9 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				230676D828F64F9300668CF9 /* Shape.cpp */,
+				230676D928F64F9300668CF9 /* Shape.hpp */,
+				230676DC28F64FA000668CF9 /* Circle.cpp */,
+				230676DD28F64FA000668CF9 /* Circle.hpp */,
+				230676E028F64FAD00668CF9 /* Square.cpp */,
+				230676E128F64FAD00668CF9 /* Square.hpp */,
+				230676E428F64FBB00668CF9 /* Rectangle.cpp */,
+				230676E528F64FBB00668CF9 /* Rectangle.hpp */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -348,6 +389,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230676DA28F64F9300668CF9 /* Shape.cpp in Sources */,
+				230676DE28F64FA000668CF9 /* Circle.cpp in Sources */,
+				230676D428F64F7F00668CF9 /* ShapeCache.cpp in Sources */,
 				230676C528F57E5800668CF9 /* Bowl.cpp in Sources */,
 				230676C928F5803F00668CF9 /* Bottle.cpp in Sources */,
 				2306767328F5499C00668CF9 /* ColorFactory.cpp in Sources */,
@@ -364,8 +408,10 @@
 				230676CE28F58B1E00668CF9 /* Product.cpp in Sources */,
 				230676B528F5795100668CF9 /* Noodle.cpp in Sources */,
 				2306768728F549ED00668CF9 /* Color.cpp in Sources */,
+				230676E628F64FBB00668CF9 /* Rectangle.cpp in Sources */,
 				2306764B28F5398500668CF9 /* ShapeFactory.cpp in Sources */,
 				2306765428F539B900668CF9 /* Circle.cpp in Sources */,
+				230676E228F64FAD00668CF9 /* Square.cpp in Sources */,
 				230676B928F5795E00668CF9 /* Beer.cpp in Sources */,
 				2306764128F5219F00668CF9 /* main.cpp in Sources */,
 				2306766F28F5498300668CF9 /* ShapeFactory.cpp in Sources */,
