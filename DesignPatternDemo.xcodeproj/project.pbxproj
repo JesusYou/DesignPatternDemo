@@ -39,6 +39,12 @@
 		230676DE28F64FA000668CF9 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676DC28F64FA000668CF9 /* Circle.cpp */; };
 		230676E228F64FAD00668CF9 /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676E028F64FAD00668CF9 /* Square.cpp */; };
 		230676E628F64FBB00668CF9 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676E428F64FBB00668CF9 /* Rectangle.cpp */; };
+		230676EC28F6693B00668CF9 /* VideoAdapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676EA28F6693B00668CF9 /* VideoAdapter.cpp */; };
+		230676F128F6696B00668CF9 /* MediaPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676EF28F6696B00668CF9 /* MediaPlayer.cpp */; };
+		230676F628F6697A00668CF9 /* AudioPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676F428F6697A00668CF9 /* AudioPlayer.cpp */; };
+		230676FA28F6698A00668CF9 /* VideoPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676F828F6698A00668CF9 /* VideoPlayer.cpp */; };
+		2306770428F669B700668CF9 /* MovVideoPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306770228F669B700668CF9 /* MovVideoPlayer.cpp */; };
+		2306770828F669CB00668CF9 /* AviVideoPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306770628F669CB00668CF9 /* AviVideoPlayer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -120,6 +126,19 @@
 		230676E128F64FAD00668CF9 /* Square.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Square.hpp; sourceTree = "<group>"; };
 		230676E428F64FBB00668CF9 /* Rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
 		230676E528F64FBB00668CF9 /* Rectangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rectangle.hpp; sourceTree = "<group>"; };
+		230676EA28F6693B00668CF9 /* VideoAdapter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VideoAdapter.cpp; sourceTree = "<group>"; };
+		230676EB28F6693B00668CF9 /* VideoAdapter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VideoAdapter.hpp; sourceTree = "<group>"; };
+		230676EF28F6696B00668CF9 /* MediaPlayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MediaPlayer.cpp; sourceTree = "<group>"; };
+		230676F028F6696B00668CF9 /* MediaPlayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MediaPlayer.hpp; sourceTree = "<group>"; };
+		230676F428F6697A00668CF9 /* AudioPlayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AudioPlayer.cpp; sourceTree = "<group>"; };
+		230676F528F6697A00668CF9 /* AudioPlayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AudioPlayer.hpp; sourceTree = "<group>"; };
+		230676F828F6698A00668CF9 /* VideoPlayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VideoPlayer.cpp; sourceTree = "<group>"; };
+		230676F928F6698A00668CF9 /* VideoPlayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VideoPlayer.hpp; sourceTree = "<group>"; };
+		230676FE28F669A600668CF9 /* AdvanceVideoPlayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AdvanceVideoPlayer.hpp; sourceTree = "<group>"; };
+		2306770228F669B700668CF9 /* MovVideoPlayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MovVideoPlayer.cpp; sourceTree = "<group>"; };
+		2306770328F669B700668CF9 /* MovVideoPlayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MovVideoPlayer.hpp; sourceTree = "<group>"; };
+		2306770628F669CB00668CF9 /* AviVideoPlayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AviVideoPlayer.cpp; sourceTree = "<group>"; };
+		2306770728F669CB00668CF9 /* AviVideoPlayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AviVideoPlayer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +176,7 @@
 				2306769728F56F6D00668CF9 /* SingletonPattern */,
 				2306769C28F5787400668CF9 /* BuilderPattern */,
 				230676D128F64F3E00668CF9 /* PrototypePattern */,
+				230676E828F668C000668CF9 /* AdapterPattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -333,6 +353,42 @@
 			path = Shape;
 			sourceTree = "<group>";
 		};
+		230676E828F668C000668CF9 /* AdapterPattern */ = {
+			isa = PBXGroup;
+			children = (
+				230676E928F668F000668CF9 /* MediaPlayer */,
+				230676EA28F6693B00668CF9 /* VideoAdapter.cpp */,
+				230676EB28F6693B00668CF9 /* VideoAdapter.hpp */,
+			);
+			path = AdapterPattern;
+			sourceTree = "<group>";
+		};
+		230676E928F668F000668CF9 /* MediaPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2306770D28F6740500668CF9 /* AdvanceVideoPlayer */,
+				230676EF28F6696B00668CF9 /* MediaPlayer.cpp */,
+				230676F028F6696B00668CF9 /* MediaPlayer.hpp */,
+				230676F428F6697A00668CF9 /* AudioPlayer.cpp */,
+				230676F528F6697A00668CF9 /* AudioPlayer.hpp */,
+				230676F828F6698A00668CF9 /* VideoPlayer.cpp */,
+				230676F928F6698A00668CF9 /* VideoPlayer.hpp */,
+			);
+			path = MediaPlayer;
+			sourceTree = "<group>";
+		};
+		2306770D28F6740500668CF9 /* AdvanceVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				230676FE28F669A600668CF9 /* AdvanceVideoPlayer.hpp */,
+				2306770228F669B700668CF9 /* MovVideoPlayer.cpp */,
+				2306770328F669B700668CF9 /* MovVideoPlayer.hpp */,
+				2306770628F669CB00668CF9 /* AviVideoPlayer.cpp */,
+				2306770728F669CB00668CF9 /* AviVideoPlayer.hpp */,
+			);
+			path = AdvanceVideoPlayer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -390,10 +446,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				230676DA28F64F9300668CF9 /* Shape.cpp in Sources */,
+				230676F128F6696B00668CF9 /* MediaPlayer.cpp in Sources */,
+				230676F628F6697A00668CF9 /* AudioPlayer.cpp in Sources */,
 				230676DE28F64FA000668CF9 /* Circle.cpp in Sources */,
 				230676D428F64F7F00668CF9 /* ShapeCache.cpp in Sources */,
 				230676C528F57E5800668CF9 /* Bowl.cpp in Sources */,
 				230676C928F5803F00668CF9 /* Bottle.cpp in Sources */,
+				2306770828F669CB00668CF9 /* AviVideoPlayer.cpp in Sources */,
 				2306767328F5499C00668CF9 /* ColorFactory.cpp in Sources */,
 				2306769028F54A1400668CF9 /* Green.cpp in Sources */,
 				2306767B28F549BE00668CF9 /* Circle.cpp in Sources */,
@@ -410,6 +469,8 @@
 				2306768728F549ED00668CF9 /* Color.cpp in Sources */,
 				230676E628F64FBB00668CF9 /* Rectangle.cpp in Sources */,
 				2306764B28F5398500668CF9 /* ShapeFactory.cpp in Sources */,
+				230676EC28F6693B00668CF9 /* VideoAdapter.cpp in Sources */,
+				230676FA28F6698A00668CF9 /* VideoPlayer.cpp in Sources */,
 				2306765428F539B900668CF9 /* Circle.cpp in Sources */,
 				230676E228F64FAD00668CF9 /* Square.cpp in Sources */,
 				230676B928F5795E00668CF9 /* Beer.cpp in Sources */,
@@ -421,6 +482,7 @@
 				230676B028F5794700668CF9 /* Rice.cpp in Sources */,
 				2306765028F539AE00668CF9 /* Shape.cpp in Sources */,
 				2306765C28F539DE00668CF9 /* Rectangle.cpp in Sources */,
+				2306770428F669B700668CF9 /* MovVideoPlayer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

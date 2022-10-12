@@ -8,6 +8,7 @@
 #ifndef Rectangle_hpp
 #define Rectangle_hpp
 
+///项目代码
 #include "Shape.hpp"
 
 namespace prototype_pattern {
