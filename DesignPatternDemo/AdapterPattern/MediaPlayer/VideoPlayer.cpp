@@ -45,12 +45,12 @@ void VideoPlayer::_init()
 
 void VideoPlayer::_playMp4File(std::string fileName)
 {
-    printf("播放mp4格式的视频文件");
+    printf("播放mp4格式的视频文件\n");
 }
 
 void VideoPlayer::_playDatFile(std::string fileName)
 {
-    printf("播放dat格式的视频文件");
+    printf("播放dat格式的视频文件\n");
 }
 ///命名空间结束
 }

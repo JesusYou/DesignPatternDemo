@@ -13,7 +13,7 @@ enum class kShapeType {
     UNKNOW,     ///未知形状
     CIRCLE,     ///圆形
     SQUARE,     ///正方形
-    RECTANGLE   ///三角形
+    RECTANGLE   ///矩形
 };
 
 class Shape {

@@ -18,7 +18,7 @@ Rectangle* Rectangle::create()
 
 void Rectangle::draw()
 {
-    printf("绘制三角形\n");
+    printf("绘制矩形\n");
 }
 ///命名空间结束
 }

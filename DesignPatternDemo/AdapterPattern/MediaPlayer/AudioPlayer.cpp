@@ -26,19 +26,19 @@ void AudioPlayer::play(kMediaType type, std::string fileName)
             _playOggFile(fileName);
             break;
         default:
-            printf("无法播放该类型的多媒体文件");
+            printf("无法播放该类型的多媒体文件\n");
             break;
     }
 }
 
 void AudioPlayer::_playMp3File(std::string fileName)
 {
-    printf("播放mp3格式的音频文件");
+    printf("播放mp3格式的音频文件\n");
 }
 
 void AudioPlayer::_playOggFile(std::string fileName)
 {
-    printf("播放ogg格式的音频文件");
+    printf("播放ogg格式的音频文件\n");
 }
 ///命名空间结束
 }

@@ -21,14 +21,14 @@ void MovVideoPlayer::play(kMediaType type, std::string fileName)
             _playMovFile(fileName);
             break;
         default:
-            printf("无法播放该类型的多媒体文件");
+            printf("无法播放该类型的多媒体文件\n");
             break;
     }
 }
 
 void MovVideoPlayer::_playMovFile(std::string fileName)
 {
-    printf("播放mov格式的视频文件");
+    printf("播放mov格式的视频文件\n");
 }
 ///命名空间结束
 }

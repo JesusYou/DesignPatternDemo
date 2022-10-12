@@ -21,14 +21,14 @@ void AviVideoPlayer::play(kMediaType type, std::string fileName)
             _playAviFile(fileName);
             break;
         default:
-            printf("无法播放该类型的多媒体文件");
+            printf("无法播放该类型的多媒体文件\n");
             break;
     }
 }
 
 void AviVideoPlayer::_playAviFile(std::string fileName)
 {
-    printf("播放avi格式的视频文件");
+    printf("播放avi格式的视频文件\n");
 }
 ///命名空间结束
 }

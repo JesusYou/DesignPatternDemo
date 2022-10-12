@@ -39,7 +39,7 @@ void VideoAdapter::play(kMediaType type, std::string fileName)
             _playAviFile(fileName);
             break;
         default:
-            printf("无法播放该类型的多媒体文件");
+            printf("无法播放该类型的多媒体文件\n");
             break;
     };
 }
@@ -58,7 +58,7 @@ void VideoAdapter::_playMovFile(std::string fileName)
         AdvanceVideoPlayer* advanceVideoPlayer = _advanceVideoPlayerMap.at(kMediaType::MOV);
         advanceVideoPlayer->play(kMediaType::MOV, fileName);
     } else {
-        printf("无法播放该类型的多媒体文件");
+        printf("无法播放该类型的多媒体文件\n");
     }
 }
 
@@ -68,7 +68,7 @@ void VideoAdapter::_playAviFile(std::string fileName)
         AdvanceVideoPlayer* advanceVideoPlayer = _advanceVideoPlayerMap.at(kMediaType::AVI);
         advanceVideoPlayer->play(kMediaType::AVI, fileName);
     } else {
-        printf("无法播放该类型的多媒体文件");
+        printf("无法播放该类型的多媒体文件\n");
     }
 }
 ///命名空间结束

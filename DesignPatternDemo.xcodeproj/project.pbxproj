@@ -45,6 +45,13 @@
 		230676FA28F6698A00668CF9 /* VideoPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230676F828F6698A00668CF9 /* VideoPlayer.cpp */; };
 		2306770428F669B700668CF9 /* MovVideoPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306770228F669B700668CF9 /* MovVideoPlayer.cpp */; };
 		2306770828F669CB00668CF9 /* AviVideoPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306770628F669CB00668CF9 /* AviVideoPlayer.cpp */; };
+		2306772F28F6B6B300668CF9 /* Artist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306772D28F6B6B200668CF9 /* Artist.cpp */; };
+		2306773628F6B6E500668CF9 /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306773428F6B6E500668CF9 /* Shape.cpp */; };
+		2306773A28F6B70300668CF9 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306773828F6B70300668CF9 /* Circle.cpp */; };
+		2306773E28F6B71200668CF9 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306773C28F6B71200668CF9 /* Rectangle.cpp */; };
+		2306774628F6B77800668CF9 /* DrawRedCircleApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306774428F6B77800668CF9 /* DrawRedCircleApi.cpp */; };
+		2306775528F6BCF700668CF9 /* DrawRedRectangleApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306775328F6BCF700668CF9 /* DrawRedRectangleApi.cpp */; };
+		2306775928F6BD0B00668CF9 /* DrawGreenRectangleApi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306775728F6BD0B00668CF9 /* DrawGreenRectangleApi.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -139,6 +146,21 @@
 		2306770328F669B700668CF9 /* MovVideoPlayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MovVideoPlayer.hpp; sourceTree = "<group>"; };
 		2306770628F669CB00668CF9 /* AviVideoPlayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AviVideoPlayer.cpp; sourceTree = "<group>"; };
 		2306770728F669CB00668CF9 /* AviVideoPlayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AviVideoPlayer.hpp; sourceTree = "<group>"; };
+		2306772D28F6B6B200668CF9 /* Artist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Artist.cpp; sourceTree = "<group>"; };
+		2306772E28F6B6B200668CF9 /* Artist.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Artist.hpp; sourceTree = "<group>"; };
+		2306773428F6B6E500668CF9 /* Shape.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shape.cpp; sourceTree = "<group>"; };
+		2306773528F6B6E500668CF9 /* Shape.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shape.hpp; sourceTree = "<group>"; };
+		2306773828F6B70300668CF9 /* Circle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
+		2306773928F6B70300668CF9 /* Circle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Circle.hpp; sourceTree = "<group>"; };
+		2306773C28F6B71200668CF9 /* Rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		2306773D28F6B71200668CF9 /* Rectangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rectangle.hpp; sourceTree = "<group>"; };
+		2306774128F6B76400668CF9 /* DrawApi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DrawApi.hpp; sourceTree = "<group>"; };
+		2306774428F6B77800668CF9 /* DrawRedCircleApi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DrawRedCircleApi.cpp; sourceTree = "<group>"; };
+		2306774528F6B77800668CF9 /* DrawRedCircleApi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DrawRedCircleApi.hpp; sourceTree = "<group>"; };
+		2306775328F6BCF700668CF9 /* DrawRedRectangleApi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DrawRedRectangleApi.cpp; sourceTree = "<group>"; };
+		2306775428F6BCF700668CF9 /* DrawRedRectangleApi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DrawRedRectangleApi.hpp; sourceTree = "<group>"; };
+		2306775728F6BD0B00668CF9 /* DrawGreenRectangleApi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DrawGreenRectangleApi.cpp; sourceTree = "<group>"; };
+		2306775828F6BD0B00668CF9 /* DrawGreenRectangleApi.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DrawGreenRectangleApi.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +199,7 @@
 				2306769C28F5787400668CF9 /* BuilderPattern */,
 				230676D128F64F3E00668CF9 /* PrototypePattern */,
 				230676E828F668C000668CF9 /* AdapterPattern */,
+				2306772C28F6B67E00668CF9 /* BrigdePattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -389,6 +412,44 @@
 			path = AdvanceVideoPlayer;
 			sourceTree = "<group>";
 		};
+		2306772C28F6B67E00668CF9 /* BrigdePattern */ = {
+			isa = PBXGroup;
+			children = (
+				2306773328F6B6CF00668CF9 /* DrawApi */,
+				2306773228F6B6B600668CF9 /* Shape */,
+				2306772D28F6B6B200668CF9 /* Artist.cpp */,
+				2306772E28F6B6B200668CF9 /* Artist.hpp */,
+			);
+			path = BrigdePattern;
+			sourceTree = "<group>";
+		};
+		2306773228F6B6B600668CF9 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				2306773428F6B6E500668CF9 /* Shape.cpp */,
+				2306773528F6B6E500668CF9 /* Shape.hpp */,
+				2306773828F6B70300668CF9 /* Circle.cpp */,
+				2306773928F6B70300668CF9 /* Circle.hpp */,
+				2306773C28F6B71200668CF9 /* Rectangle.cpp */,
+				2306773D28F6B71200668CF9 /* Rectangle.hpp */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		2306773328F6B6CF00668CF9 /* DrawApi */ = {
+			isa = PBXGroup;
+			children = (
+				2306774128F6B76400668CF9 /* DrawApi.hpp */,
+				2306774428F6B77800668CF9 /* DrawRedCircleApi.cpp */,
+				2306774528F6B77800668CF9 /* DrawRedCircleApi.hpp */,
+				2306775328F6BCF700668CF9 /* DrawRedRectangleApi.cpp */,
+				2306775428F6BCF700668CF9 /* DrawRedRectangleApi.hpp */,
+				2306775728F6BD0B00668CF9 /* DrawGreenRectangleApi.cpp */,
+				2306775828F6BD0B00668CF9 /* DrawGreenRectangleApi.hpp */,
+			);
+			path = DrawApi;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -449,11 +510,15 @@
 				230676F128F6696B00668CF9 /* MediaPlayer.cpp in Sources */,
 				230676F628F6697A00668CF9 /* AudioPlayer.cpp in Sources */,
 				230676DE28F64FA000668CF9 /* Circle.cpp in Sources */,
+				2306775528F6BCF700668CF9 /* DrawRedRectangleApi.cpp in Sources */,
+				2306773E28F6B71200668CF9 /* Rectangle.cpp in Sources */,
 				230676D428F64F7F00668CF9 /* ShapeCache.cpp in Sources */,
 				230676C528F57E5800668CF9 /* Bowl.cpp in Sources */,
 				230676C928F5803F00668CF9 /* Bottle.cpp in Sources */,
 				2306770828F669CB00668CF9 /* AviVideoPlayer.cpp in Sources */,
 				2306767328F5499C00668CF9 /* ColorFactory.cpp in Sources */,
+				2306774628F6B77800668CF9 /* DrawRedCircleApi.cpp in Sources */,
+				2306772F28F6B6B300668CF9 /* Artist.cpp in Sources */,
 				2306769028F54A1400668CF9 /* Green.cpp in Sources */,
 				2306767B28F549BE00668CF9 /* Circle.cpp in Sources */,
 				2306769F28F578A200668CF9 /* MealBuilder.cpp in Sources */,
@@ -467,10 +532,12 @@
 				230676CE28F58B1E00668CF9 /* Product.cpp in Sources */,
 				230676B528F5795100668CF9 /* Noodle.cpp in Sources */,
 				2306768728F549ED00668CF9 /* Color.cpp in Sources */,
+				2306773A28F6B70300668CF9 /* Circle.cpp in Sources */,
 				230676E628F64FBB00668CF9 /* Rectangle.cpp in Sources */,
 				2306764B28F5398500668CF9 /* ShapeFactory.cpp in Sources */,
 				230676EC28F6693B00668CF9 /* VideoAdapter.cpp in Sources */,
 				230676FA28F6698A00668CF9 /* VideoPlayer.cpp in Sources */,
+				2306773628F6B6E500668CF9 /* Shape.cpp in Sources */,
 				2306765428F539B900668CF9 /* Circle.cpp in Sources */,
 				230676E228F64FAD00668CF9 /* Square.cpp in Sources */,
 				230676B928F5795E00668CF9 /* Beer.cpp in Sources */,
@@ -478,6 +545,7 @@
 				2306766F28F5498300668CF9 /* ShapeFactory.cpp in Sources */,
 				2306766328F547FC00668CF9 /* FactoryManager.cpp in Sources */,
 				230676BD28F5796A00668CF9 /* Mike.cpp in Sources */,
+				2306775928F6BD0B00668CF9 /* DrawGreenRectangleApi.cpp in Sources */,
 				2306769A28F56F9100668CF9 /* Singleton.cpp in Sources */,
 				230676B028F5794700668CF9 /* Rice.cpp in Sources */,
 				2306765028F539AE00668CF9 /* Shape.cpp in Sources */,
