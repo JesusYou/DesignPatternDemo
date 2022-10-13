@@ -77,6 +77,13 @@
 		230677EF28F7E89200668CF9 /* NormalLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677ED28F7E89200668CF9 /* NormalLog.cpp */; };
 		230677F328F7E89D00668CF9 /* WarnLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677F128F7E89D00668CF9 /* WarnLog.cpp */; };
 		230677F728F7E8A800668CF9 /* ErrorLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677F528F7E8A800668CF9 /* ErrorLog.cpp */; };
+		2306782F28F8196100668CF9 /* MarketManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306782D28F8196100668CF9 /* MarketManager.cpp */; };
+		2306783428F8197000668CF9 /* OrderSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306783228F8197000668CF9 /* OrderSystem.cpp */; };
+		2306783A28F819B000668CF9 /* Product.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306783828F819B000668CF9 /* Product.cpp */; };
+		2306783F28F819BA00668CF9 /* Bread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306783D28F819BA00668CF9 /* Bread.cpp */; };
+		2306784328F819C300668CF9 /* Mike.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306784128F819C300668CF9 /* Mike.cpp */; };
+		2306784B28F819DC00668CF9 /* BuyOrder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306784928F819DC00668CF9 /* BuyOrder.cpp */; };
+		2306784F28F819E700668CF9 /* SellOrder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306784D28F819E700668CF9 /* SellOrder.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -239,6 +246,21 @@
 		230677F228F7E89D00668CF9 /* WarnLog.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WarnLog.hpp; sourceTree = "<group>"; };
 		230677F528F7E8A800668CF9 /* ErrorLog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ErrorLog.cpp; sourceTree = "<group>"; };
 		230677F628F7E8A800668CF9 /* ErrorLog.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ErrorLog.hpp; sourceTree = "<group>"; };
+		2306782D28F8196100668CF9 /* MarketManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MarketManager.cpp; sourceTree = "<group>"; };
+		2306782E28F8196100668CF9 /* MarketManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MarketManager.hpp; sourceTree = "<group>"; };
+		2306783228F8197000668CF9 /* OrderSystem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OrderSystem.cpp; sourceTree = "<group>"; };
+		2306783328F8197000668CF9 /* OrderSystem.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OrderSystem.hpp; sourceTree = "<group>"; };
+		2306783828F819B000668CF9 /* Product.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Product.cpp; sourceTree = "<group>"; };
+		2306783928F819B000668CF9 /* Product.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Product.hpp; sourceTree = "<group>"; };
+		2306783D28F819BA00668CF9 /* Bread.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bread.cpp; sourceTree = "<group>"; };
+		2306783E28F819BA00668CF9 /* Bread.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bread.hpp; sourceTree = "<group>"; };
+		2306784128F819C300668CF9 /* Mike.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mike.cpp; sourceTree = "<group>"; };
+		2306784228F819C300668CF9 /* Mike.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mike.hpp; sourceTree = "<group>"; };
+		2306784628F819CD00668CF9 /* Order.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Order.hpp; sourceTree = "<group>"; };
+		2306784928F819DC00668CF9 /* BuyOrder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BuyOrder.cpp; sourceTree = "<group>"; };
+		2306784A28F819DC00668CF9 /* BuyOrder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BuyOrder.hpp; sourceTree = "<group>"; };
+		2306784D28F819E700668CF9 /* SellOrder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SellOrder.cpp; sourceTree = "<group>"; };
+		2306784E28F819E700668CF9 /* SellOrder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SellOrder.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +306,7 @@
 				230677B128F7B12100668CF9 /* FlyWeightPattern */,
 				230677CF28F7C81D00668CF9 /* ProxyPattern */,
 				230677E228F7E3F100668CF9 /* ChainOfResponsibilityPattern */,
+				2306782C28F8193900668CF9 /* CommandPattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -685,6 +708,44 @@
 			path = Log;
 			sourceTree = "<group>";
 		};
+		2306782C28F8193900668CF9 /* CommandPattern */ = {
+			isa = PBXGroup;
+			children = (
+				2306783728F8198100668CF9 /* Order */,
+				2306783628F8197400668CF9 /* Product */,
+				2306782D28F8196100668CF9 /* MarketManager.cpp */,
+				2306782E28F8196100668CF9 /* MarketManager.hpp */,
+				2306783228F8197000668CF9 /* OrderSystem.cpp */,
+				2306783328F8197000668CF9 /* OrderSystem.hpp */,
+			);
+			path = CommandPattern;
+			sourceTree = "<group>";
+		};
+		2306783628F8197400668CF9 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				2306783828F819B000668CF9 /* Product.cpp */,
+				2306783928F819B000668CF9 /* Product.hpp */,
+				2306783D28F819BA00668CF9 /* Bread.cpp */,
+				2306783E28F819BA00668CF9 /* Bread.hpp */,
+				2306784128F819C300668CF9 /* Mike.cpp */,
+				2306784228F819C300668CF9 /* Mike.hpp */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		2306783728F8198100668CF9 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				2306784628F819CD00668CF9 /* Order.hpp */,
+				2306784928F819DC00668CF9 /* BuyOrder.cpp */,
+				2306784A28F819DC00668CF9 /* BuyOrder.hpp */,
+				2306784D28F819E700668CF9 /* SellOrder.cpp */,
+				2306784E28F819E700668CF9 /* SellOrder.hpp */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -741,9 +802,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2306782F28F8196100668CF9 /* MarketManager.cpp in Sources */,
+				2306783428F8197000668CF9 /* OrderSystem.cpp in Sources */,
 				230676DA28F64F9300668CF9 /* Shape.cpp in Sources */,
 				230676F128F6696B00668CF9 /* MediaPlayer.cpp in Sources */,
 				230677B428F7B14800668CF9 /* ShapeFactory.cpp in Sources */,
+				2306783A28F819B000668CF9 /* Product.cpp in Sources */,
+				2306783F28F819BA00668CF9 /* Bread.cpp in Sources */,
 				230676F628F6697A00668CF9 /* AudioPlayer.cpp in Sources */,
 				230676DE28F64FA000668CF9 /* Circle.cpp in Sources */,
 				230677EA28F7E87D00668CF9 /* Log.cpp in Sources */,
@@ -788,6 +853,7 @@
 				230676E628F64FBB00668CF9 /* Rectangle.cpp in Sources */,
 				2306764B28F5398500668CF9 /* ShapeFactory.cpp in Sources */,
 				2306777328F6E07F00668CF9 /* Circle.cpp in Sources */,
+				2306784B28F819DC00668CF9 /* BuyOrder.cpp in Sources */,
 				2306775E28F6CC4500668CF9 /* Employee.cpp in Sources */,
 				230676EC28F6693B00668CF9 /* VideoAdapter.cpp in Sources */,
 				230676FA28F6698A00668CF9 /* VideoPlayer.cpp in Sources */,
@@ -805,7 +871,9 @@
 				230676B028F5794700668CF9 /* Rice.cpp in Sources */,
 				2306777728F6E08E00668CF9 /* Rectangle.cpp in Sources */,
 				230677E028F7DC9000668CF9 /* ProxyImage.cpp in Sources */,
+				2306784F28F819E700668CF9 /* SellOrder.cpp in Sources */,
 				2306765028F539AE00668CF9 /* Shape.cpp in Sources */,
+				2306784328F819C300668CF9 /* Mike.cpp in Sources */,
 				2306777F28F6E0B500668CF9 /* RedShapeDecorator.cpp in Sources */,
 				230677C528F7B20A00668CF9 /* RedCircle.cpp in Sources */,
 				230677D828F7DC5A00668CF9 /* Image.cpp in Sources */,
