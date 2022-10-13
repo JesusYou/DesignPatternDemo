@@ -72,6 +72,11 @@
 		230677D828F7DC5A00668CF9 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677D628F7DC5A00668CF9 /* Image.cpp */; };
 		230677DC28F7DC6800668CF9 /* RealImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677DA28F7DC6800668CF9 /* RealImage.cpp */; };
 		230677E028F7DC9000668CF9 /* ProxyImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677DE28F7DC9000668CF9 /* ProxyImage.cpp */; };
+		230677E528F7E86A00668CF9 /* LogPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677E328F7E86A00668CF9 /* LogPrinter.cpp */; };
+		230677EA28F7E87D00668CF9 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677E828F7E87D00668CF9 /* Log.cpp */; };
+		230677EF28F7E89200668CF9 /* NormalLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677ED28F7E89200668CF9 /* NormalLog.cpp */; };
+		230677F328F7E89D00668CF9 /* WarnLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677F128F7E89D00668CF9 /* WarnLog.cpp */; };
+		230677F728F7E8A800668CF9 /* ErrorLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677F528F7E8A800668CF9 /* ErrorLog.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -224,6 +229,16 @@
 		230677DB28F7DC6800668CF9 /* RealImage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RealImage.hpp; sourceTree = "<group>"; };
 		230677DE28F7DC9000668CF9 /* ProxyImage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ProxyImage.cpp; sourceTree = "<group>"; };
 		230677DF28F7DC9000668CF9 /* ProxyImage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ProxyImage.hpp; sourceTree = "<group>"; };
+		230677E328F7E86A00668CF9 /* LogPrinter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LogPrinter.cpp; sourceTree = "<group>"; };
+		230677E428F7E86A00668CF9 /* LogPrinter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LogPrinter.hpp; sourceTree = "<group>"; };
+		230677E828F7E87D00668CF9 /* Log.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
+		230677E928F7E87D00668CF9 /* Log.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Log.hpp; sourceTree = "<group>"; };
+		230677ED28F7E89200668CF9 /* NormalLog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NormalLog.cpp; sourceTree = "<group>"; };
+		230677EE28F7E89200668CF9 /* NormalLog.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NormalLog.hpp; sourceTree = "<group>"; };
+		230677F128F7E89D00668CF9 /* WarnLog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WarnLog.cpp; sourceTree = "<group>"; };
+		230677F228F7E89D00668CF9 /* WarnLog.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WarnLog.hpp; sourceTree = "<group>"; };
+		230677F528F7E8A800668CF9 /* ErrorLog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ErrorLog.cpp; sourceTree = "<group>"; };
+		230677F628F7E8A800668CF9 /* ErrorLog.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ErrorLog.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +283,7 @@
 				2306778A28F7A6AC00668CF9 /* FacadePattern */,
 				230677B128F7B12100668CF9 /* FlyWeightPattern */,
 				230677CF28F7C81D00668CF9 /* ProxyPattern */,
+				230677E228F7E3F100668CF9 /* ChainOfResponsibilityPattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -644,6 +660,31 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		230677E228F7E3F100668CF9 /* ChainOfResponsibilityPattern */ = {
+			isa = PBXGroup;
+			children = (
+				230677E728F7E87000668CF9 /* Log */,
+				230677E328F7E86A00668CF9 /* LogPrinter.cpp */,
+				230677E428F7E86A00668CF9 /* LogPrinter.hpp */,
+			);
+			path = ChainOfResponsibilityPattern;
+			sourceTree = "<group>";
+		};
+		230677E728F7E87000668CF9 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				230677E828F7E87D00668CF9 /* Log.cpp */,
+				230677E928F7E87D00668CF9 /* Log.hpp */,
+				230677ED28F7E89200668CF9 /* NormalLog.cpp */,
+				230677EE28F7E89200668CF9 /* NormalLog.hpp */,
+				230677F128F7E89D00668CF9 /* WarnLog.cpp */,
+				230677F228F7E89D00668CF9 /* WarnLog.hpp */,
+				230677F528F7E8A800668CF9 /* ErrorLog.cpp */,
+				230677F628F7E8A800668CF9 /* ErrorLog.hpp */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -705,6 +746,7 @@
 				230677B428F7B14800668CF9 /* ShapeFactory.cpp in Sources */,
 				230676F628F6697A00668CF9 /* AudioPlayer.cpp in Sources */,
 				230676DE28F64FA000668CF9 /* Circle.cpp in Sources */,
+				230677EA28F7E87D00668CF9 /* Log.cpp in Sources */,
 				2306775528F6BCF700668CF9 /* DrawRedRectangleApi.cpp in Sources */,
 				2306773E28F6B71200668CF9 /* Rectangle.cpp in Sources */,
 				230677C928F7B21700668CF9 /* GreenCircle.cpp in Sources */,
@@ -719,6 +761,7 @@
 				2306772F28F6B6B300668CF9 /* Artist.cpp in Sources */,
 				2306769028F54A1400668CF9 /* Green.cpp in Sources */,
 				2306767B28F549BE00668CF9 /* Circle.cpp in Sources */,
+				230677E528F7E86A00668CF9 /* LogPrinter.cpp in Sources */,
 				2306769F28F578A200668CF9 /* MealBuilder.cpp in Sources */,
 				2306776328F6CD7100668CF9 /* Company.cpp in Sources */,
 				230676A328F578B400668CF9 /* Meal.cpp in Sources */,
@@ -735,10 +778,13 @@
 				230677C028F7B17000668CF9 /* Circle.cpp in Sources */,
 				230676CE28F58B1E00668CF9 /* Product.cpp in Sources */,
 				230677CD28F7B22300668CF9 /* BlueCircle.cpp in Sources */,
+				230677F728F7E8A800668CF9 /* ErrorLog.cpp in Sources */,
+				230677EF28F7E89200668CF9 /* NormalLog.cpp in Sources */,
 				230676B528F5795100668CF9 /* Noodle.cpp in Sources */,
 				2306768728F549ED00668CF9 /* Color.cpp in Sources */,
 				230677DC28F7DC6800668CF9 /* RealImage.cpp in Sources */,
 				2306773A28F6B70300668CF9 /* Circle.cpp in Sources */,
+				230677F328F7E89D00668CF9 /* WarnLog.cpp in Sources */,
 				230676E628F64FBB00668CF9 /* Rectangle.cpp in Sources */,
 				2306764B28F5398500668CF9 /* ShapeFactory.cpp in Sources */,
 				2306777328F6E07F00668CF9 /* Circle.cpp in Sources */,
