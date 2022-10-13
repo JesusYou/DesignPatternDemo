@@ -68,6 +68,10 @@
 		230677C528F7B20A00668CF9 /* RedCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677C328F7B20A00668CF9 /* RedCircle.cpp */; };
 		230677C928F7B21700668CF9 /* GreenCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677C728F7B21700668CF9 /* GreenCircle.cpp */; };
 		230677CD28F7B22300668CF9 /* BlueCircle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677CB28F7B22300668CF9 /* BlueCircle.cpp */; };
+		230677D328F7C86600668CF9 /* ImageManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677D128F7C86600668CF9 /* ImageManager.cpp */; };
+		230677D828F7DC5A00668CF9 /* Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677D628F7DC5A00668CF9 /* Image.cpp */; };
+		230677DC28F7DC6800668CF9 /* RealImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677DA28F7DC6800668CF9 /* RealImage.cpp */; };
+		230677E028F7DC9000668CF9 /* ProxyImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 230677DE28F7DC9000668CF9 /* ProxyImage.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -212,6 +216,14 @@
 		230677C828F7B21700668CF9 /* GreenCircle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GreenCircle.hpp; sourceTree = "<group>"; };
 		230677CB28F7B22300668CF9 /* BlueCircle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BlueCircle.cpp; sourceTree = "<group>"; };
 		230677CC28F7B22300668CF9 /* BlueCircle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BlueCircle.hpp; sourceTree = "<group>"; };
+		230677D128F7C86600668CF9 /* ImageManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ImageManager.cpp; sourceTree = "<group>"; };
+		230677D228F7C86600668CF9 /* ImageManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ImageManager.hpp; sourceTree = "<group>"; };
+		230677D628F7DC5A00668CF9 /* Image.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Image.cpp; sourceTree = "<group>"; };
+		230677D728F7DC5A00668CF9 /* Image.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Image.hpp; sourceTree = "<group>"; };
+		230677DA28F7DC6800668CF9 /* RealImage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RealImage.cpp; sourceTree = "<group>"; };
+		230677DB28F7DC6800668CF9 /* RealImage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RealImage.hpp; sourceTree = "<group>"; };
+		230677DE28F7DC9000668CF9 /* ProxyImage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ProxyImage.cpp; sourceTree = "<group>"; };
+		230677DF28F7DC9000668CF9 /* ProxyImage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ProxyImage.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +267,7 @@
 				2306776528F6E00700668CF9 /* DecoratorPattern */,
 				2306778A28F7A6AC00668CF9 /* FacadePattern */,
 				230677B128F7B12100668CF9 /* FlyWeightPattern */,
+				230677CF28F7C81D00668CF9 /* ProxyPattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -608,6 +621,29 @@
 			path = Circle;
 			sourceTree = "<group>";
 		};
+		230677CF28F7C81D00668CF9 /* ProxyPattern */ = {
+			isa = PBXGroup;
+			children = (
+				230677D028F7C83000668CF9 /* Image */,
+				230677D128F7C86600668CF9 /* ImageManager.cpp */,
+				230677D228F7C86600668CF9 /* ImageManager.hpp */,
+			);
+			path = ProxyPattern;
+			sourceTree = "<group>";
+		};
+		230677D028F7C83000668CF9 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				230677D628F7DC5A00668CF9 /* Image.cpp */,
+				230677D728F7DC5A00668CF9 /* Image.hpp */,
+				230677DA28F7DC6800668CF9 /* RealImage.cpp */,
+				230677DB28F7DC6800668CF9 /* RealImage.hpp */,
+				230677DE28F7DC9000668CF9 /* ProxyImage.cpp */,
+				230677DF28F7DC9000668CF9 /* ProxyImage.hpp */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -675,6 +711,7 @@
 				230676D428F64F7F00668CF9 /* ShapeCache.cpp in Sources */,
 				2306777B28F6E0A800668CF9 /* ShapeDecorator.cpp in Sources */,
 				230676C528F57E5800668CF9 /* Bowl.cpp in Sources */,
+				230677D328F7C86600668CF9 /* ImageManager.cpp in Sources */,
 				230676C928F5803F00668CF9 /* Bottle.cpp in Sources */,
 				2306770828F669CB00668CF9 /* AviVideoPlayer.cpp in Sources */,
 				2306767328F5499C00668CF9 /* ColorFactory.cpp in Sources */,
@@ -700,6 +737,7 @@
 				230677CD28F7B22300668CF9 /* BlueCircle.cpp in Sources */,
 				230676B528F5795100668CF9 /* Noodle.cpp in Sources */,
 				2306768728F549ED00668CF9 /* Color.cpp in Sources */,
+				230677DC28F7DC6800668CF9 /* RealImage.cpp in Sources */,
 				2306773A28F6B70300668CF9 /* Circle.cpp in Sources */,
 				230676E628F64FBB00668CF9 /* Rectangle.cpp in Sources */,
 				2306764B28F5398500668CF9 /* ShapeFactory.cpp in Sources */,
@@ -720,9 +758,11 @@
 				2306769A28F56F9100668CF9 /* Singleton.cpp in Sources */,
 				230676B028F5794700668CF9 /* Rice.cpp in Sources */,
 				2306777728F6E08E00668CF9 /* Rectangle.cpp in Sources */,
+				230677E028F7DC9000668CF9 /* ProxyImage.cpp in Sources */,
 				2306765028F539AE00668CF9 /* Shape.cpp in Sources */,
 				2306777F28F6E0B500668CF9 /* RedShapeDecorator.cpp in Sources */,
 				230677C528F7B20A00668CF9 /* RedCircle.cpp in Sources */,
+				230677D828F7DC5A00668CF9 /* Image.cpp in Sources */,
 				2306765C28F539DE00668CF9 /* Rectangle.cpp in Sources */,
 				2306770428F669B700668CF9 /* MovVideoPlayer.cpp in Sources */,
 			);
