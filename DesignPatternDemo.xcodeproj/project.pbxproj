@@ -59,6 +59,10 @@
 		2306777728F6E08E00668CF9 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306777528F6E08E00668CF9 /* Rectangle.cpp */; };
 		2306777B28F6E0A800668CF9 /* ShapeDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306777928F6E0A800668CF9 /* ShapeDecorator.cpp */; };
 		2306777F28F6E0B500668CF9 /* RedShapeDecorator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306777D28F6E0B500668CF9 /* RedShapeDecorator.cpp */; };
+		2306779328F7A6D700668CF9 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306779128F7A6D700668CF9 /* Circle.cpp */; };
+		2306779728F7A6E200668CF9 /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306779528F7A6E200668CF9 /* Square.cpp */; };
+		2306779B28F7A6EF00668CF9 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306779928F7A6EF00668CF9 /* Rectangle.cpp */; };
+		2306779F28F7A6FD00668CF9 /* ShapeMaker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306779D28F7A6FD00668CF9 /* ShapeMaker.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -183,6 +187,15 @@
 		2306777A28F6E0A800668CF9 /* ShapeDecorator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShapeDecorator.hpp; sourceTree = "<group>"; };
 		2306777D28F6E0B500668CF9 /* RedShapeDecorator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RedShapeDecorator.cpp; sourceTree = "<group>"; };
 		2306777E28F6E0B500668CF9 /* RedShapeDecorator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RedShapeDecorator.hpp; sourceTree = "<group>"; };
+		2306778D28F7A6CD00668CF9 /* Shape.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shape.hpp; sourceTree = "<group>"; };
+		2306779128F7A6D700668CF9 /* Circle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
+		2306779228F7A6D700668CF9 /* Circle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Circle.hpp; sourceTree = "<group>"; };
+		2306779528F7A6E200668CF9 /* Square.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Square.cpp; sourceTree = "<group>"; };
+		2306779628F7A6E200668CF9 /* Square.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Square.hpp; sourceTree = "<group>"; };
+		2306779928F7A6EF00668CF9 /* Rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		2306779A28F7A6EF00668CF9 /* Rectangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rectangle.hpp; sourceTree = "<group>"; };
+		2306779D28F7A6FD00668CF9 /* ShapeMaker.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeMaker.cpp; sourceTree = "<group>"; };
+		2306779E28F7A6FD00668CF9 /* ShapeMaker.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShapeMaker.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +237,7 @@
 				2306772C28F6B67E00668CF9 /* BrigdePattern */,
 				2306775B28F6CC1700668CF9 /* CompositePattern */,
 				2306776528F6E00700668CF9 /* DecoratorPattern */,
+				2306778A28F7A6AC00668CF9 /* FacadePattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -519,6 +533,30 @@
 			path = Shape;
 			sourceTree = "<group>";
 		};
+		2306778A28F7A6AC00668CF9 /* FacadePattern */ = {
+			isa = PBXGroup;
+			children = (
+				2306778B28F7A6BF00668CF9 /* Shape */,
+				2306779D28F7A6FD00668CF9 /* ShapeMaker.cpp */,
+				2306779E28F7A6FD00668CF9 /* ShapeMaker.hpp */,
+			);
+			path = FacadePattern;
+			sourceTree = "<group>";
+		};
+		2306778B28F7A6BF00668CF9 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				2306778D28F7A6CD00668CF9 /* Shape.hpp */,
+				2306779128F7A6D700668CF9 /* Circle.cpp */,
+				2306779228F7A6D700668CF9 /* Circle.hpp */,
+				2306779528F7A6E200668CF9 /* Square.cpp */,
+				2306779628F7A6E200668CF9 /* Square.hpp */,
+				2306779928F7A6EF00668CF9 /* Rectangle.cpp */,
+				2306779A28F7A6EF00668CF9 /* Rectangle.hpp */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -594,11 +632,14 @@
 				2306769F28F578A200668CF9 /* MealBuilder.cpp in Sources */,
 				2306776328F6CD7100668CF9 /* Company.cpp in Sources */,
 				230676A328F578B400668CF9 /* Meal.cpp in Sources */,
+				2306779B28F7A6EF00668CF9 /* Rectangle.cpp in Sources */,
+				2306779328F7A6D700668CF9 /* Circle.cpp in Sources */,
 				2306776A28F6E04800668CF9 /* Artist.cpp in Sources */,
 				2306767F28F549CA00668CF9 /* Square.cpp in Sources */,
 				2306768B28F54A0900668CF9 /* Red.cpp in Sources */,
 				2306767728F549AD00668CF9 /* Shape.cpp in Sources */,
 				2306768328F549DB00668CF9 /* Rectangle.cpp in Sources */,
+				2306779728F7A6E200668CF9 /* Square.cpp in Sources */,
 				2306765828F539CA00668CF9 /* Square.cpp in Sources */,
 				2306769428F54A1E00668CF9 /* Blue.cpp in Sources */,
 				230676CE28F58B1E00668CF9 /* Product.cpp in Sources */,
@@ -615,6 +656,7 @@
 				2306765428F539B900668CF9 /* Circle.cpp in Sources */,
 				230676E228F64FAD00668CF9 /* Square.cpp in Sources */,
 				230676B928F5795E00668CF9 /* Beer.cpp in Sources */,
+				2306779F28F7A6FD00668CF9 /* ShapeMaker.cpp in Sources */,
 				2306764128F5219F00668CF9 /* main.cpp in Sources */,
 				2306766F28F5498300668CF9 /* ShapeFactory.cpp in Sources */,
 				2306766328F547FC00668CF9 /* FactoryManager.cpp in Sources */,
