@@ -88,6 +88,9 @@
 		2306786728F8F7E400668CF9 /* TerminalExpression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306786528F8F7E400668CF9 /* TerminalExpression.cpp */; };
 		2306786B28F8F7F400668CF9 /* AddExpression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306786928F8F7F400668CF9 /* AddExpression.cpp */; };
 		2306786F28F8F80700668CF9 /* SubExpression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306786D28F8F80700668CF9 /* SubExpression.cpp */; };
+		2306787528F9084400668CF9 /* Container.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306787328F9084400668CF9 /* Container.cpp */; };
+		2306787928F90E3A00668CF9 /* Iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306787728F90E3A00668CF9 /* Iterator.cpp */; };
+		2306787D28F913F100668CF9 /* ContainerTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306787B28F913F100668CF9 /* ContainerTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -274,6 +277,12 @@
 		2306786A28F8F7F400668CF9 /* AddExpression.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AddExpression.hpp; sourceTree = "<group>"; };
 		2306786D28F8F80700668CF9 /* SubExpression.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SubExpression.cpp; sourceTree = "<group>"; };
 		2306786E28F8F80700668CF9 /* SubExpression.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SubExpression.hpp; sourceTree = "<group>"; };
+		2306787328F9084400668CF9 /* Container.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Container.cpp; sourceTree = "<group>"; };
+		2306787428F9084400668CF9 /* Container.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Container.hpp; sourceTree = "<group>"; };
+		2306787728F90E3A00668CF9 /* Iterator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Iterator.cpp; sourceTree = "<group>"; };
+		2306787828F90E3A00668CF9 /* Iterator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Iterator.hpp; sourceTree = "<group>"; };
+		2306787B28F913F100668CF9 /* ContainerTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ContainerTester.cpp; sourceTree = "<group>"; };
+		2306787C28F913F100668CF9 /* ContainerTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ContainerTester.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +330,7 @@
 				230677E228F7E3F100668CF9 /* ChainOfResponsibilityPattern */,
 				2306782C28F8193900668CF9 /* CommandPattern */,
 				2306785B28F8F75500668CF9 /* InterpreterPattern */,
+				2306787228F907EA00668CF9 /* IteratorPattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -784,6 +794,19 @@
 			path = Expression;
 			sourceTree = "<group>";
 		};
+		2306787228F907EA00668CF9 /* IteratorPattern */ = {
+			isa = PBXGroup;
+			children = (
+				2306787328F9084400668CF9 /* Container.cpp */,
+				2306787428F9084400668CF9 /* Container.hpp */,
+				2306787728F90E3A00668CF9 /* Iterator.cpp */,
+				2306787828F90E3A00668CF9 /* Iterator.hpp */,
+				2306787B28F913F100668CF9 /* ContainerTester.cpp */,
+				2306787C28F913F100668CF9 /* ContainerTester.hpp */,
+			);
+			path = IteratorPattern;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -842,6 +865,7 @@
 			files = (
 				2306782F28F8196100668CF9 /* MarketManager.cpp in Sources */,
 				2306783428F8197000668CF9 /* OrderSystem.cpp in Sources */,
+				2306787D28F913F100668CF9 /* ContainerTester.cpp in Sources */,
 				230676DA28F64F9300668CF9 /* Shape.cpp in Sources */,
 				230676F128F6696B00668CF9 /* MediaPlayer.cpp in Sources */,
 				230677B428F7B14800668CF9 /* ShapeFactory.cpp in Sources */,
@@ -881,8 +905,10 @@
 				2306769428F54A1E00668CF9 /* Blue.cpp in Sources */,
 				230677C028F7B17000668CF9 /* Circle.cpp in Sources */,
 				230676CE28F58B1E00668CF9 /* Product.cpp in Sources */,
+				2306787528F9084400668CF9 /* Container.cpp in Sources */,
 				230677CD28F7B22300668CF9 /* BlueCircle.cpp in Sources */,
 				230677F728F7E8A800668CF9 /* ErrorLog.cpp in Sources */,
+				2306787928F90E3A00668CF9 /* Iterator.cpp in Sources */,
 				230677EF28F7E89200668CF9 /* NormalLog.cpp in Sources */,
 				230676B528F5795100668CF9 /* Noodle.cpp in Sources */,
 				2306768728F549ED00668CF9 /* Color.cpp in Sources */,
