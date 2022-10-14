@@ -91,6 +91,9 @@
 		2306787528F9084400668CF9 /* Container.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306787328F9084400668CF9 /* Container.cpp */; };
 		2306787928F90E3A00668CF9 /* Iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306787728F90E3A00668CF9 /* Iterator.cpp */; };
 		2306787D28F913F100668CF9 /* ContainerTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306787B28F913F100668CF9 /* ContainerTester.cpp */; };
+		2306788228F930DF00668CF9 /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306788028F930DE00668CF9 /* User.cpp */; };
+		2306788728F930EC00668CF9 /* ChatRoom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306788528F930EC00668CF9 /* ChatRoom.cpp */; };
+		2306788B28F930FC00668CF9 /* ChatSoftware.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306788928F930FC00668CF9 /* ChatSoftware.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -283,6 +286,12 @@
 		2306787828F90E3A00668CF9 /* Iterator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Iterator.hpp; sourceTree = "<group>"; };
 		2306787B28F913F100668CF9 /* ContainerTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ContainerTester.cpp; sourceTree = "<group>"; };
 		2306787C28F913F100668CF9 /* ContainerTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ContainerTester.hpp; sourceTree = "<group>"; };
+		2306788028F930DE00668CF9 /* User.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = User.cpp; sourceTree = "<group>"; };
+		2306788128F930DE00668CF9 /* User.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = User.hpp; sourceTree = "<group>"; };
+		2306788528F930EC00668CF9 /* ChatRoom.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChatRoom.cpp; sourceTree = "<group>"; };
+		2306788628F930EC00668CF9 /* ChatRoom.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChatRoom.hpp; sourceTree = "<group>"; };
+		2306788928F930FC00668CF9 /* ChatSoftware.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChatSoftware.cpp; sourceTree = "<group>"; };
+		2306788A28F930FC00668CF9 /* ChatSoftware.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChatSoftware.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +340,7 @@
 				2306782C28F8193900668CF9 /* CommandPattern */,
 				2306785B28F8F75500668CF9 /* InterpreterPattern */,
 				2306787228F907EA00668CF9 /* IteratorPattern */,
+				2306787F28F930BC00668CF9 /* MediatorPattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -807,6 +817,19 @@
 			path = IteratorPattern;
 			sourceTree = "<group>";
 		};
+		2306787F28F930BC00668CF9 /* MediatorPattern */ = {
+			isa = PBXGroup;
+			children = (
+				2306788028F930DE00668CF9 /* User.cpp */,
+				2306788128F930DE00668CF9 /* User.hpp */,
+				2306788528F930EC00668CF9 /* ChatRoom.cpp */,
+				2306788628F930EC00668CF9 /* ChatRoom.hpp */,
+				2306788928F930FC00668CF9 /* ChatSoftware.cpp */,
+				2306788A28F930FC00668CF9 /* ChatSoftware.hpp */,
+			);
+			path = MediatorPattern;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -870,8 +893,10 @@
 				230676F128F6696B00668CF9 /* MediaPlayer.cpp in Sources */,
 				230677B428F7B14800668CF9 /* ShapeFactory.cpp in Sources */,
 				2306783A28F819B000668CF9 /* Product.cpp in Sources */,
+				2306788B28F930FC00668CF9 /* ChatSoftware.cpp in Sources */,
 				2306783F28F819BA00668CF9 /* Bread.cpp in Sources */,
 				230676F628F6697A00668CF9 /* AudioPlayer.cpp in Sources */,
+				2306788228F930DF00668CF9 /* User.cpp in Sources */,
 				230676DE28F64FA000668CF9 /* Circle.cpp in Sources */,
 				230677EA28F7E87D00668CF9 /* Log.cpp in Sources */,
 				2306775528F6BCF700668CF9 /* DrawRedRectangleApi.cpp in Sources */,
@@ -922,6 +947,7 @@
 				2306784B28F819DC00668CF9 /* BuyOrder.cpp in Sources */,
 				2306775E28F6CC4500668CF9 /* Employee.cpp in Sources */,
 				230676EC28F6693B00668CF9 /* VideoAdapter.cpp in Sources */,
+				2306788728F930EC00668CF9 /* ChatRoom.cpp in Sources */,
 				230676FA28F6698A00668CF9 /* VideoPlayer.cpp in Sources */,
 				2306773628F6B6E500668CF9 /* Shape.cpp in Sources */,
 				2306765428F539B900668CF9 /* Circle.cpp in Sources */,
