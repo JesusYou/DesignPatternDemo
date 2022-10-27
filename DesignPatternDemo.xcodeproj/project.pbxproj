@@ -94,6 +94,9 @@
 		2306788228F930DF00668CF9 /* User.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306788028F930DE00668CF9 /* User.cpp */; };
 		2306788728F930EC00668CF9 /* ChatRoom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306788528F930EC00668CF9 /* ChatRoom.cpp */; };
 		2306788B28F930FC00668CF9 /* ChatSoftware.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2306788928F930FC00668CF9 /* ChatSoftware.cpp */; };
+		23672DBA290A8D7100489020 /* TextEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672DB8290A8D7100489020 /* TextEditor.cpp */; };
+		23672DBF290A8D8000489020 /* Memento.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672DBD290A8D8000489020 /* Memento.cpp */; };
+		23672DC3290A8D9200489020 /* MementoManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672DC1290A8D9200489020 /* MementoManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -292,6 +295,12 @@
 		2306788628F930EC00668CF9 /* ChatRoom.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChatRoom.hpp; sourceTree = "<group>"; };
 		2306788928F930FC00668CF9 /* ChatSoftware.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ChatSoftware.cpp; sourceTree = "<group>"; };
 		2306788A28F930FC00668CF9 /* ChatSoftware.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChatSoftware.hpp; sourceTree = "<group>"; };
+		23672DB8290A8D7100489020 /* TextEditor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TextEditor.cpp; sourceTree = "<group>"; };
+		23672DB9290A8D7100489020 /* TextEditor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextEditor.hpp; sourceTree = "<group>"; };
+		23672DBD290A8D8000489020 /* Memento.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Memento.cpp; sourceTree = "<group>"; };
+		23672DBE290A8D8000489020 /* Memento.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Memento.hpp; sourceTree = "<group>"; };
+		23672DC1290A8D9200489020 /* MementoManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MementoManager.cpp; sourceTree = "<group>"; };
+		23672DC2290A8D9200489020 /* MementoManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MementoManager.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,6 +350,7 @@
 				2306785B28F8F75500668CF9 /* InterpreterPattern */,
 				2306787228F907EA00668CF9 /* IteratorPattern */,
 				2306787F28F930BC00668CF9 /* MediatorPattern */,
+				23672DB7290A8C9600489020 /* MementoPattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -830,6 +840,19 @@
 			path = MediatorPattern;
 			sourceTree = "<group>";
 		};
+		23672DB7290A8C9600489020 /* MementoPattern */ = {
+			isa = PBXGroup;
+			children = (
+				23672DB8290A8D7100489020 /* TextEditor.cpp */,
+				23672DB9290A8D7100489020 /* TextEditor.hpp */,
+				23672DBD290A8D8000489020 /* Memento.cpp */,
+				23672DBE290A8D8000489020 /* Memento.hpp */,
+				23672DC1290A8D9200489020 /* MementoManager.cpp */,
+				23672DC2290A8D9200489020 /* MementoManager.hpp */,
+			);
+			path = MementoPattern;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -895,6 +918,7 @@
 				2306783A28F819B000668CF9 /* Product.cpp in Sources */,
 				2306788B28F930FC00668CF9 /* ChatSoftware.cpp in Sources */,
 				2306783F28F819BA00668CF9 /* Bread.cpp in Sources */,
+				23672DBF290A8D8000489020 /* Memento.cpp in Sources */,
 				230676F628F6697A00668CF9 /* AudioPlayer.cpp in Sources */,
 				2306788228F930DF00668CF9 /* User.cpp in Sources */,
 				230676DE28F64FA000668CF9 /* Circle.cpp in Sources */,
@@ -905,6 +929,7 @@
 				230676D428F64F7F00668CF9 /* ShapeCache.cpp in Sources */,
 				2306777B28F6E0A800668CF9 /* ShapeDecorator.cpp in Sources */,
 				230676C528F57E5800668CF9 /* Bowl.cpp in Sources */,
+				23672DBA290A8D7100489020 /* TextEditor.cpp in Sources */,
 				230677D328F7C86600668CF9 /* ImageManager.cpp in Sources */,
 				230676C928F5803F00668CF9 /* Bottle.cpp in Sources */,
 				2306770828F669CB00668CF9 /* AviVideoPlayer.cpp in Sources */,
@@ -967,6 +992,7 @@
 				2306784F28F819E700668CF9 /* SellOrder.cpp in Sources */,
 				2306765028F539AE00668CF9 /* Shape.cpp in Sources */,
 				2306786B28F8F7F400668CF9 /* AddExpression.cpp in Sources */,
+				23672DC3290A8D9200489020 /* MementoManager.cpp in Sources */,
 				2306784328F819C300668CF9 /* Mike.cpp in Sources */,
 				2306777F28F6E0B500668CF9 /* RedShapeDecorator.cpp in Sources */,
 				230677C528F7B20A00668CF9 /* RedCircle.cpp in Sources */,
