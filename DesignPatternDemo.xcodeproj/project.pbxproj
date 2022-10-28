@@ -108,6 +108,11 @@
 		23672DF9290B629800489020 /* RunState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672DF7290B629800489020 /* RunState.cpp */; };
 		23672DFE290B659200489020 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672DFC290B659200489020 /* Object.cpp */; };
 		23672E02290B685B00489020 /* Director.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E00290B685B00489020 /* Director.cpp */; };
+		23672E07290B762F00489020 /* Computer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E05290B762F00489020 /* Computer.cpp */; };
+		23672E0C290B763E00489020 /* Calculator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E0A290B763E00489020 /* Calculator.cpp */; };
+		23672E15290B76C700489020 /* AddStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E13290B76C700489020 /* AddStrategy.cpp */; };
+		23672E19290B76DA00489020 /* SubstractStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E17290B76DA00489020 /* SubstractStrategy.cpp */; };
+		23672E1D290B770200489020 /* MultiplyStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E1B290B770200489020 /* MultiplyStrategy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -336,6 +341,17 @@
 		23672DFD290B659200489020 /* Object.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
 		23672E00290B685B00489020 /* Director.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Director.cpp; sourceTree = "<group>"; };
 		23672E01290B685B00489020 /* Director.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Director.hpp; sourceTree = "<group>"; };
+		23672E05290B762F00489020 /* Computer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Computer.cpp; sourceTree = "<group>"; };
+		23672E06290B762F00489020 /* Computer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Computer.hpp; sourceTree = "<group>"; };
+		23672E0A290B763E00489020 /* Calculator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Calculator.cpp; sourceTree = "<group>"; };
+		23672E0B290B763E00489020 /* Calculator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Calculator.hpp; sourceTree = "<group>"; };
+		23672E10290B76BA00489020 /* AlgorithmStrategy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AlgorithmStrategy.hpp; sourceTree = "<group>"; };
+		23672E13290B76C700489020 /* AddStrategy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AddStrategy.cpp; sourceTree = "<group>"; };
+		23672E14290B76C700489020 /* AddStrategy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AddStrategy.hpp; sourceTree = "<group>"; };
+		23672E17290B76DA00489020 /* SubstractStrategy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SubstractStrategy.cpp; sourceTree = "<group>"; };
+		23672E18290B76DA00489020 /* SubstractStrategy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SubstractStrategy.hpp; sourceTree = "<group>"; };
+		23672E1B290B770200489020 /* MultiplyStrategy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MultiplyStrategy.cpp; sourceTree = "<group>"; };
+		23672E1C290B770200489020 /* MultiplyStrategy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MultiplyStrategy.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -388,6 +404,7 @@
 				23672DB7290A8C9600489020 /* MementoPattern */,
 				23672DC5290AA21300489020 /* ObserverPattern */,
 				23672DE8290B623B00489020 /* StatePattern */,
+				23672E04290B753D00489020 /* StrategyPattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -944,6 +961,32 @@
 			path = State;
 			sourceTree = "<group>";
 		};
+		23672E04290B753D00489020 /* StrategyPattern */ = {
+			isa = PBXGroup;
+			children = (
+				23672E0E290B764400489020 /* Strategy */,
+				23672E05290B762F00489020 /* Computer.cpp */,
+				23672E06290B762F00489020 /* Computer.hpp */,
+				23672E0A290B763E00489020 /* Calculator.cpp */,
+				23672E0B290B763E00489020 /* Calculator.hpp */,
+			);
+			path = StrategyPattern;
+			sourceTree = "<group>";
+		};
+		23672E0E290B764400489020 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				23672E10290B76BA00489020 /* AlgorithmStrategy.hpp */,
+				23672E13290B76C700489020 /* AddStrategy.cpp */,
+				23672E14290B76C700489020 /* AddStrategy.hpp */,
+				23672E17290B76DA00489020 /* SubstractStrategy.cpp */,
+				23672E18290B76DA00489020 /* SubstractStrategy.hpp */,
+				23672E1B290B770200489020 /* MultiplyStrategy.cpp */,
+				23672E1C290B770200489020 /* MultiplyStrategy.hpp */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1008,6 +1051,7 @@
 				230677B428F7B14800668CF9 /* ShapeFactory.cpp in Sources */,
 				2306783A28F819B000668CF9 /* Product.cpp in Sources */,
 				23672DF9290B629800489020 /* RunState.cpp in Sources */,
+				23672E15290B76C700489020 /* AddStrategy.cpp in Sources */,
 				2306788B28F930FC00668CF9 /* ChatSoftware.cpp in Sources */,
 				2306783F28F819BA00668CF9 /* Bread.cpp in Sources */,
 				23672DBF290A8D8000489020 /* Memento.cpp in Sources */,
@@ -1015,6 +1059,7 @@
 				230676F628F6697A00668CF9 /* AudioPlayer.cpp in Sources */,
 				2306788228F930DF00668CF9 /* User.cpp in Sources */,
 				230676DE28F64FA000668CF9 /* Circle.cpp in Sources */,
+				23672E1D290B770200489020 /* MultiplyStrategy.cpp in Sources */,
 				230677EA28F7E87D00668CF9 /* Log.cpp in Sources */,
 				2306775528F6BCF700668CF9 /* DrawRedRectangleApi.cpp in Sources */,
 				2306773E28F6B71200668CF9 /* Rectangle.cpp in Sources */,
@@ -1026,6 +1071,7 @@
 				23672DBA290A8D7100489020 /* TextEditor.cpp in Sources */,
 				230677D328F7C86600668CF9 /* ImageManager.cpp in Sources */,
 				230676C928F5803F00668CF9 /* Bottle.cpp in Sources */,
+				23672E0C290B763E00489020 /* Calculator.cpp in Sources */,
 				2306770828F669CB00668CF9 /* AviVideoPlayer.cpp in Sources */,
 				2306767328F5499C00668CF9 /* ColorFactory.cpp in Sources */,
 				2306774628F6B77800668CF9 /* DrawRedCircleApi.cpp in Sources */,
@@ -1064,6 +1110,7 @@
 				230677F328F7E89D00668CF9 /* WarnLog.cpp in Sources */,
 				23672DF5290B628800489020 /* WalkState.cpp in Sources */,
 				230676E628F64FBB00668CF9 /* Rectangle.cpp in Sources */,
+				23672E07290B762F00489020 /* Computer.cpp in Sources */,
 				2306764B28F5398500668CF9 /* ShapeFactory.cpp in Sources */,
 				23672DDE290AA82000489020 /* RunObserver.cpp in Sources */,
 				2306777328F6E07F00668CF9 /* Circle.cpp in Sources */,
@@ -1073,6 +1120,7 @@
 				2306788728F930EC00668CF9 /* ChatRoom.cpp in Sources */,
 				230676FA28F6698A00668CF9 /* VideoPlayer.cpp in Sources */,
 				2306773628F6B6E500668CF9 /* Shape.cpp in Sources */,
+				23672E19290B76DA00489020 /* SubstractStrategy.cpp in Sources */,
 				2306765428F539B900668CF9 /* Circle.cpp in Sources */,
 				230676E228F64FAD00668CF9 /* Square.cpp in Sources */,
 				230676B928F5795E00668CF9 /* Beer.cpp in Sources */,

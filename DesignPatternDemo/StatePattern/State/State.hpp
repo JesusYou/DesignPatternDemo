@@ -11,7 +11,7 @@
 namespace state_pattern {
 class State {
 public:
-    void release() { delete this; }
+    virtual void release() { delete this; }
     virtual void onEnter() = 0;
     virtual void onExit() = 0;
     

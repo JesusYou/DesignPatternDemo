@@ -14,7 +14,7 @@
 namespace observer_pattern {
 class Observer {
 public:
-    void release() { delete this; }
+    virtual void release() { delete this; }
     virtual void notify(kObjectState objectState) = 0;
     
 protected:
