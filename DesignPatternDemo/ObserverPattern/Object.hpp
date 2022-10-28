@@ -21,7 +21,6 @@ enum class kObjectState {
 };
 
 class Observer;
-
 class Object final {
 public:
     static Object* create();

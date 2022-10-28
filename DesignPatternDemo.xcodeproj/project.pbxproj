@@ -116,6 +116,11 @@
 		23672E23290B823800489020 /* GameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E21290B823800489020 /* GameEngine.cpp */; };
 		23672E2D290B827C00489020 /* BasketballGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E2B290B827C00489020 /* BasketballGame.cpp */; };
 		23672E31290B828A00489020 /* FootballGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E2F290B828A00489020 /* FootballGame.cpp */; };
+		23672E5B290B8F6300489020 /* Computer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E51290B8F6300489020 /* Computer.cpp */; };
+		23672E5C290B8F6300489020 /* Mouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E53290B8F6300489020 /* Mouse.cpp */; };
+		23672E5D290B8F6300489020 /* Keyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E57290B8F6300489020 /* Keyboard.cpp */; };
+		23672E7C290BD28E00489020 /* OperateVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E7A290BD28D00489020 /* OperateVisitor.cpp */; };
+		23672E81290BD64E00489020 /* ComputerOperator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E7F290BD64E00489020 /* ComputerOperator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -362,6 +367,18 @@
 		23672E2C290B827C00489020 /* BasketballGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BasketballGame.hpp; sourceTree = "<group>"; };
 		23672E2F290B828A00489020 /* FootballGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FootballGame.cpp; sourceTree = "<group>"; };
 		23672E30290B828A00489020 /* FootballGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FootballGame.hpp; sourceTree = "<group>"; };
+		23672E51290B8F6300489020 /* Computer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Computer.cpp; sourceTree = "<group>"; };
+		23672E52290B8F6300489020 /* Keyboard.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Keyboard.hpp; sourceTree = "<group>"; };
+		23672E53290B8F6300489020 /* Mouse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mouse.cpp; sourceTree = "<group>"; };
+		23672E54290B8F6300489020 /* Object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
+		23672E55290B8F6300489020 /* Mouse.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mouse.hpp; sourceTree = "<group>"; };
+		23672E56290B8F6300489020 /* Computer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Computer.hpp; sourceTree = "<group>"; };
+		23672E57290B8F6300489020 /* Keyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Keyboard.cpp; sourceTree = "<group>"; };
+		23672E59290B8F6300489020 /* Visitor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Visitor.hpp; sourceTree = "<group>"; };
+		23672E7A290BD28D00489020 /* OperateVisitor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OperateVisitor.cpp; sourceTree = "<group>"; };
+		23672E7B290BD28E00489020 /* OperateVisitor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OperateVisitor.hpp; sourceTree = "<group>"; };
+		23672E7F290BD64E00489020 /* ComputerOperator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ComputerOperator.cpp; sourceTree = "<group>"; };
+		23672E80290BD64E00489020 /* ComputerOperator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ComputerOperator.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -416,6 +433,7 @@
 				23672DE8290B623B00489020 /* StatePattern */,
 				23672E04290B753D00489020 /* StrategyPattern */,
 				23672E20290B81BD00489020 /* TemplatePattern */,
+				23672E4F290B8F6300489020 /* VisitorPattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -1020,6 +1038,41 @@
 			path = Game;
 			sourceTree = "<group>";
 		};
+		23672E4F290B8F6300489020 /* VisitorPattern */ = {
+			isa = PBXGroup;
+			children = (
+				23672E50290B8F6300489020 /* Object */,
+				23672E58290B8F6300489020 /* Visitor */,
+				23672E7F290BD64E00489020 /* ComputerOperator.cpp */,
+				23672E80290BD64E00489020 /* ComputerOperator.hpp */,
+			);
+			path = VisitorPattern;
+			sourceTree = "<group>";
+		};
+		23672E50290B8F6300489020 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				23672E54290B8F6300489020 /* Object.hpp */,
+				23672E57290B8F6300489020 /* Keyboard.cpp */,
+				23672E52290B8F6300489020 /* Keyboard.hpp */,
+				23672E53290B8F6300489020 /* Mouse.cpp */,
+				23672E55290B8F6300489020 /* Mouse.hpp */,
+				23672E51290B8F6300489020 /* Computer.cpp */,
+				23672E56290B8F6300489020 /* Computer.hpp */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		23672E58290B8F6300489020 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				23672E59290B8F6300489020 /* Visitor.hpp */,
+				23672E7A290BD28D00489020 /* OperateVisitor.cpp */,
+				23672E7B290BD28E00489020 /* OperateVisitor.hpp */,
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1088,6 +1141,7 @@
 				2306788B28F930FC00668CF9 /* ChatSoftware.cpp in Sources */,
 				2306783F28F819BA00668CF9 /* Bread.cpp in Sources */,
 				23672DBF290A8D8000489020 /* Memento.cpp in Sources */,
+				23672E81290BD64E00489020 /* ComputerOperator.cpp in Sources */,
 				23672DDA290AA80E00489020 /* WalkObserver.cpp in Sources */,
 				230676F628F6697A00668CF9 /* AudioPlayer.cpp in Sources */,
 				2306788228F930DF00668CF9 /* User.cpp in Sources */,
@@ -1107,6 +1161,7 @@
 				23672E0C290B763E00489020 /* Calculator.cpp in Sources */,
 				2306770828F669CB00668CF9 /* AviVideoPlayer.cpp in Sources */,
 				2306767328F5499C00668CF9 /* ColorFactory.cpp in Sources */,
+				23672E7C290BD28E00489020 /* OperateVisitor.cpp in Sources */,
 				2306774628F6B77800668CF9 /* DrawRedCircleApi.cpp in Sources */,
 				2306772F28F6B6B300668CF9 /* Artist.cpp in Sources */,
 				2306769028F54A1400668CF9 /* Green.cpp in Sources */,
@@ -1122,6 +1177,7 @@
 				2306776A28F6E04800668CF9 /* Artist.cpp in Sources */,
 				2306767F28F549CA00668CF9 /* Square.cpp in Sources */,
 				2306768B28F54A0900668CF9 /* Red.cpp in Sources */,
+				23672E5D290B8F6300489020 /* Keyboard.cpp in Sources */,
 				23672E23290B823800489020 /* GameEngine.cpp in Sources */,
 				2306767728F549AD00668CF9 /* Shape.cpp in Sources */,
 				2306786728F8F7E400668CF9 /* TerminalExpression.cpp in Sources */,
@@ -1156,6 +1212,7 @@
 				2306773628F6B6E500668CF9 /* Shape.cpp in Sources */,
 				23672E19290B76DA00489020 /* SubstractStrategy.cpp in Sources */,
 				2306765428F539B900668CF9 /* Circle.cpp in Sources */,
+				23672E5B290B8F6300489020 /* Computer.cpp in Sources */,
 				230676E228F64FAD00668CF9 /* Square.cpp in Sources */,
 				23672E2D290B827C00489020 /* BasketballGame.cpp in Sources */,
 				230676B928F5795E00668CF9 /* Beer.cpp in Sources */,
@@ -1168,6 +1225,7 @@
 				230676BD28F5796A00668CF9 /* Mike.cpp in Sources */,
 				2306775928F6BD0B00668CF9 /* DrawGreenRectangleApi.cpp in Sources */,
 				23672E31290B828A00489020 /* FootballGame.cpp in Sources */,
+				23672E5C290B8F6300489020 /* Mouse.cpp in Sources */,
 				2306786F28F8F80700668CF9 /* SubExpression.cpp in Sources */,
 				2306769A28F56F9100668CF9 /* Singleton.cpp in Sources */,
 				23672E02290B685B00489020 /* Director.cpp in Sources */,

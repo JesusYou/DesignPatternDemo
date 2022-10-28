@@ -18,7 +18,7 @@ public:
     virtual void startGame() override;
     virtual void endGame() override;
     
-protected:
+private:
     FootballGame() = default;
     virtual ~FootballGame() = default;
 };
