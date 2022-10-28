@@ -113,6 +113,9 @@
 		23672E15290B76C700489020 /* AddStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E13290B76C700489020 /* AddStrategy.cpp */; };
 		23672E19290B76DA00489020 /* SubstractStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E17290B76DA00489020 /* SubstractStrategy.cpp */; };
 		23672E1D290B770200489020 /* MultiplyStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E1B290B770200489020 /* MultiplyStrategy.cpp */; };
+		23672E23290B823800489020 /* GameEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E21290B823800489020 /* GameEngine.cpp */; };
+		23672E2D290B827C00489020 /* BasketballGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E2B290B827C00489020 /* BasketballGame.cpp */; };
+		23672E31290B828A00489020 /* FootballGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E2F290B828A00489020 /* FootballGame.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -352,6 +355,13 @@
 		23672E18290B76DA00489020 /* SubstractStrategy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SubstractStrategy.hpp; sourceTree = "<group>"; };
 		23672E1B290B770200489020 /* MultiplyStrategy.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MultiplyStrategy.cpp; sourceTree = "<group>"; };
 		23672E1C290B770200489020 /* MultiplyStrategy.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MultiplyStrategy.hpp; sourceTree = "<group>"; };
+		23672E21290B823800489020 /* GameEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GameEngine.cpp; sourceTree = "<group>"; };
+		23672E22290B823800489020 /* GameEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GameEngine.hpp; sourceTree = "<group>"; };
+		23672E28290B824B00489020 /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		23672E2B290B827C00489020 /* BasketballGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BasketballGame.cpp; sourceTree = "<group>"; };
+		23672E2C290B827C00489020 /* BasketballGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BasketballGame.hpp; sourceTree = "<group>"; };
+		23672E2F290B828A00489020 /* FootballGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FootballGame.cpp; sourceTree = "<group>"; };
+		23672E30290B828A00489020 /* FootballGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FootballGame.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -405,6 +415,7 @@
 				23672DC5290AA21300489020 /* ObserverPattern */,
 				23672DE8290B623B00489020 /* StatePattern */,
 				23672E04290B753D00489020 /* StrategyPattern */,
+				23672E20290B81BD00489020 /* TemplatePattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -987,6 +998,28 @@
 			path = Strategy;
 			sourceTree = "<group>";
 		};
+		23672E20290B81BD00489020 /* TemplatePattern */ = {
+			isa = PBXGroup;
+			children = (
+				23672E26290B823C00489020 /* Game */,
+				23672E21290B823800489020 /* GameEngine.cpp */,
+				23672E22290B823800489020 /* GameEngine.hpp */,
+			);
+			path = TemplatePattern;
+			sourceTree = "<group>";
+		};
+		23672E26290B823C00489020 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				23672E28290B824B00489020 /* Game.hpp */,
+				23672E2B290B827C00489020 /* BasketballGame.cpp */,
+				23672E2C290B827C00489020 /* BasketballGame.hpp */,
+				23672E2F290B828A00489020 /* FootballGame.cpp */,
+				23672E30290B828A00489020 /* FootballGame.hpp */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1089,6 +1122,7 @@
 				2306776A28F6E04800668CF9 /* Artist.cpp in Sources */,
 				2306767F28F549CA00668CF9 /* Square.cpp in Sources */,
 				2306768B28F54A0900668CF9 /* Red.cpp in Sources */,
+				23672E23290B823800489020 /* GameEngine.cpp in Sources */,
 				2306767728F549AD00668CF9 /* Shape.cpp in Sources */,
 				2306786728F8F7E400668CF9 /* TerminalExpression.cpp in Sources */,
 				2306768328F549DB00668CF9 /* Rectangle.cpp in Sources */,
@@ -1123,6 +1157,7 @@
 				23672E19290B76DA00489020 /* SubstractStrategy.cpp in Sources */,
 				2306765428F539B900668CF9 /* Circle.cpp in Sources */,
 				230676E228F64FAD00668CF9 /* Square.cpp in Sources */,
+				23672E2D290B827C00489020 /* BasketballGame.cpp in Sources */,
 				230676B928F5795E00668CF9 /* Beer.cpp in Sources */,
 				2306779F28F7A6FD00668CF9 /* ShapeMaker.cpp in Sources */,
 				2306764128F5219F00668CF9 /* main.cpp in Sources */,
@@ -1132,6 +1167,7 @@
 				2306766328F547FC00668CF9 /* FactoryManager.cpp in Sources */,
 				230676BD28F5796A00668CF9 /* Mike.cpp in Sources */,
 				2306775928F6BD0B00668CF9 /* DrawGreenRectangleApi.cpp in Sources */,
+				23672E31290B828A00489020 /* FootballGame.cpp in Sources */,
 				2306786F28F8F80700668CF9 /* SubExpression.cpp in Sources */,
 				2306769A28F56F9100668CF9 /* Singleton.cpp in Sources */,
 				23672E02290B685B00489020 /* Director.cpp in Sources */,
