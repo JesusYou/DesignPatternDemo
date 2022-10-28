@@ -103,6 +103,11 @@
 		23672DDA290AA80E00489020 /* WalkObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672DD8290AA80E00489020 /* WalkObserver.cpp */; };
 		23672DDE290AA82000489020 /* RunObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672DDC290AA82000489020 /* RunObserver.cpp */; };
 		23672DE3290AAE9500489020 /* Director.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672DE1290AAE9500489020 /* Director.cpp */; };
+		23672DF0290B627800489020 /* StandState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672DEE290B627800489020 /* StandState.cpp */; };
+		23672DF5290B628800489020 /* WalkState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672DF3290B628800489020 /* WalkState.cpp */; };
+		23672DF9290B629800489020 /* RunState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672DF7290B629800489020 /* RunState.cpp */; };
+		23672DFE290B659200489020 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672DFC290B659200489020 /* Object.cpp */; };
+		23672E02290B685B00489020 /* Director.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23672E00290B685B00489020 /* Director.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -320,6 +325,17 @@
 		23672DDD290AA82000489020 /* RunObserver.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RunObserver.hpp; sourceTree = "<group>"; };
 		23672DE1290AAE9500489020 /* Director.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Director.cpp; sourceTree = "<group>"; };
 		23672DE2290AAE9500489020 /* Director.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Director.hpp; sourceTree = "<group>"; };
+		23672DEA290B625C00489020 /* State.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = State.hpp; sourceTree = "<group>"; };
+		23672DEE290B627800489020 /* StandState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StandState.cpp; sourceTree = "<group>"; };
+		23672DEF290B627800489020 /* StandState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StandState.hpp; sourceTree = "<group>"; };
+		23672DF3290B628800489020 /* WalkState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = WalkState.cpp; sourceTree = "<group>"; };
+		23672DF4290B628800489020 /* WalkState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WalkState.hpp; sourceTree = "<group>"; };
+		23672DF7290B629800489020 /* RunState.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RunState.cpp; sourceTree = "<group>"; };
+		23672DF8290B629800489020 /* RunState.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RunState.hpp; sourceTree = "<group>"; };
+		23672DFC290B659200489020 /* Object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Object.cpp; sourceTree = "<group>"; };
+		23672DFD290B659200489020 /* Object.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Object.hpp; sourceTree = "<group>"; };
+		23672E00290B685B00489020 /* Director.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Director.cpp; sourceTree = "<group>"; };
+		23672E01290B685B00489020 /* Director.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Director.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,6 +387,7 @@
 				2306787F28F930BC00668CF9 /* MediatorPattern */,
 				23672DB7290A8C9600489020 /* MementoPattern */,
 				23672DC5290AA21300489020 /* ObserverPattern */,
+				23672DE8290B623B00489020 /* StatePattern */,
 				2306764028F5219F00668CF9 /* main.cpp */,
 			);
 			path = DesignPatternDemo;
@@ -901,6 +918,32 @@
 			path = Observer;
 			sourceTree = "<group>";
 		};
+		23672DE8290B623B00489020 /* StatePattern */ = {
+			isa = PBXGroup;
+			children = (
+				23672DED290B626000489020 /* State */,
+				23672DFC290B659200489020 /* Object.cpp */,
+				23672DFD290B659200489020 /* Object.hpp */,
+				23672E00290B685B00489020 /* Director.cpp */,
+				23672E01290B685B00489020 /* Director.hpp */,
+			);
+			path = StatePattern;
+			sourceTree = "<group>";
+		};
+		23672DED290B626000489020 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				23672DEA290B625C00489020 /* State.hpp */,
+				23672DEE290B627800489020 /* StandState.cpp */,
+				23672DEF290B627800489020 /* StandState.hpp */,
+				23672DF3290B628800489020 /* WalkState.cpp */,
+				23672DF4290B628800489020 /* WalkState.hpp */,
+				23672DF7290B629800489020 /* RunState.cpp */,
+				23672DF8290B629800489020 /* RunState.hpp */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -964,6 +1007,7 @@
 				230676F128F6696B00668CF9 /* MediaPlayer.cpp in Sources */,
 				230677B428F7B14800668CF9 /* ShapeFactory.cpp in Sources */,
 				2306783A28F819B000668CF9 /* Product.cpp in Sources */,
+				23672DF9290B629800489020 /* RunState.cpp in Sources */,
 				2306788B28F930FC00668CF9 /* ChatSoftware.cpp in Sources */,
 				2306783F28F819BA00668CF9 /* Bread.cpp in Sources */,
 				23672DBF290A8D8000489020 /* Memento.cpp in Sources */,
@@ -975,6 +1019,7 @@
 				2306775528F6BCF700668CF9 /* DrawRedRectangleApi.cpp in Sources */,
 				2306773E28F6B71200668CF9 /* Rectangle.cpp in Sources */,
 				230677C928F7B21700668CF9 /* GreenCircle.cpp in Sources */,
+				23672DF0290B627800489020 /* StandState.cpp in Sources */,
 				230676D428F64F7F00668CF9 /* ShapeCache.cpp in Sources */,
 				2306777B28F6E0A800668CF9 /* ShapeDecorator.cpp in Sources */,
 				230676C528F57E5800668CF9 /* Bowl.cpp in Sources */,
@@ -993,6 +1038,7 @@
 				230676A328F578B400668CF9 /* Meal.cpp in Sources */,
 				23672DD6290AA7FF00489020 /* CrouchObserver.cpp in Sources */,
 				2306779B28F7A6EF00668CF9 /* Rectangle.cpp in Sources */,
+				23672DFE290B659200489020 /* Object.cpp in Sources */,
 				2306779328F7A6D700668CF9 /* Circle.cpp in Sources */,
 				2306776A28F6E04800668CF9 /* Artist.cpp in Sources */,
 				2306767F28F549CA00668CF9 /* Square.cpp in Sources */,
@@ -1016,6 +1062,7 @@
 				230677DC28F7DC6800668CF9 /* RealImage.cpp in Sources */,
 				2306773A28F6B70300668CF9 /* Circle.cpp in Sources */,
 				230677F328F7E89D00668CF9 /* WarnLog.cpp in Sources */,
+				23672DF5290B628800489020 /* WalkState.cpp in Sources */,
 				230676E628F64FBB00668CF9 /* Rectangle.cpp in Sources */,
 				2306764B28F5398500668CF9 /* ShapeFactory.cpp in Sources */,
 				23672DDE290AA82000489020 /* RunObserver.cpp in Sources */,
@@ -1039,6 +1086,7 @@
 				2306775928F6BD0B00668CF9 /* DrawGreenRectangleApi.cpp in Sources */,
 				2306786F28F8F80700668CF9 /* SubExpression.cpp in Sources */,
 				2306769A28F56F9100668CF9 /* Singleton.cpp in Sources */,
+				23672E02290B685B00489020 /* Director.cpp in Sources */,
 				230676B028F5794700668CF9 /* Rice.cpp in Sources */,
 				2306777728F6E08E00668CF9 /* Rectangle.cpp in Sources */,
 				230677E028F7DC9000668CF9 /* ProxyImage.cpp in Sources */,
